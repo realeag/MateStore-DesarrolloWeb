@@ -1,0 +1,551 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contenedor {
+    background: linear-gradient(to right, #D7DAA5 0%, #A1A772 0%, #ab9353 100%);
+    background-size: contain;
+    position: relative; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto 70px;
+    grid-template-areas:"nav nav"
+                        "header header"
+                        "aside main"
+                        "footer footer";
+}
+
+.menu { /*navbar*/
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background: linear-gradient(to left, #325F07 0%, #62AC11 0%, #57652a 100%);
+    color: whitesmoke;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    grid-area: nav;
+}   
+
+.logo img {
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+}
+.logo:hover{
+    transform: scale(1.1);
+    transition: all 500ms;
+}
+.navegador a{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+}
+.navegador a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.lateral{ /*logo mi cuenta, productos y footer*/
+    width: 170px;
+    height: 80;
+    align-items: center;
+    display: flex;
+    justify-self: auto;
+    
+}
+.lateral__1 {
+    width: 35%;
+}
+.lateral__2 {
+    width: 35%;
+}
+.lateral__3{
+    width: 45%;
+}
+.lateral__1:hover{
+    transform: scale(1.2);
+    transition: all 500ms;
+}
+.lateral__2:hover{
+    transform: scale(1.2);
+    transition: all 500ms;
+}
+.lateral__3:hover{
+    transform: scale(1.2);
+    transition: all 500ms;
+}
+.titulo { /*fondo del header y caracteristicas del nombre*/
+    background-image: url("../img/fondomates.jpeg");
+    height: 480px;
+    background-size: cover;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-style: oblique;
+    padding: 5px;
+    text-shadow: -2px -2px 1px #000;
+    grid-area: header;
+    background-attachment: fixed;
+}
+/*HEADER*/
+
+.principal {
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    margin: 5px;
+    padding: 5px;
+    align-items: left;
+    font-size: 30px;
+    grid-area: main;
+}
+.principal h2{
+    margin: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+.principal h3{
+    margin: 50px;
+}
+.publicidad{
+    grid-area: aside;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    padding: 10px;
+    margin: 0;
+    text-align: left;
+}
+.publicidad h3 {
+    text-align: left;
+    font-size: 25px;
+    margin: 100px;
+
+}
+.publicidad p{
+    font-size: 1.5rem;
+    margin: 10px;
+    padding: 5px;
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 3px 5px 5px gray;
+}
+
+
+.menu ul {
+    list-style: none;
+}
+.menu ul li {
+    display: inline-block;
+    font-size: 16px;
+    padding: 16px;
+}
+
+.prod {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    width: 300px;
+    height: 450px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 3px 5px 5px black;
+    display: grid;
+    grid-area: main;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+}
+.tarjetas {
+    display: flex;
+    flex-wrap:wrap;
+    ;
+    margin: 50px;
+}
+.prod__btn {
+    margin: 10px;
+    padding: 3px;
+    align-items:center;
+    justify-content: center;
+
+}
+.tarjeta__inoxidable {
+    height: 300px;
+}
+.productosLista{
+    padding: 20px;
+    margin: 20px;
+    font-size: 22px;
+    color: white;
+    text-align:justify;
+
+}
+.productosTit {
+    text-align: left;
+    text-decoration: underline rgb(29, 27, 27);
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(22, 61, 85);
+    display: flex;
+
+}
+
+
+a {
+    font: arial ; color:    rgb(233, 233, 233); font-size: large;
+}
+
+.login {
+    width: 400px ;
+    padding: 40px;
+    background-color: #668853;
+    margin: 50px;
+    margin-top: 100px;
+    border-radius: 4px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 7px 13px 37px rgb(19, 17, 17);
+    font-size: 16px;
+}
+.loginTitulo{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.entradas{
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 12px;
+    border: 1px solid #8bbd6e;
+    font-size: 16px;
+    display: flex;
+    align-self: auto;
+}
+.login a{
+    color: white;
+    text-decoration: none;
+}
+.login a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.boton{
+    width: 100%;
+    border: none;
+    padding: 12px;
+    color: white;
+    background-color: #8bbd6e;
+    margin: 16px 0;
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    color: white;
+    font-size: 24px;
+    background: none;
+    border: none;
+}
+.boton :hover{
+    color: #162c01;
+    text-decoration:underline;
+}
+
+.formulario{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    width: 400px;
+    height: 520px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 40px;
+    margin: 50px;
+    margin-top: 100px;
+    box-shadow: 7px 13px 37px rgb(19, 17, 17);
+    margin-bottom: 100px;
+    display: flex;
+    align-self: auto;
+}
+
+.enviosText{
+    font-size: 24px;
+    color:whitesmoke;
+    font-style: oblique;
+    font-weight: bolder;
+    margin: 20px;
+}
+.publiCuenta{
+    list-style: none;
+    padding: 50px;
+    margin: 50px;
+    grid-area: aside;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+.publiCuenta ul{
+    list-style: none;
+}
+.publiCuenta a{
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+
+}
+.publiCuenta a:hover{
+    color: blue;
+    text-decoration:underline;
+}
+/*ORDEN EN GRIDS Y FLEXBOX ESTRUCTURA DE PARRAFOS*/
+.nosotros{ /*VER COMO ARREGLARLO*/
+    display: grid;
+    grid-area: aside;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 175px auto;
+    grid-template-areas: "nav nav"
+                        "main main"
+                        "main2 main2"
+                        "main3 main3"
+                        "footer footer";
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.nosotrosCero{
+    font-style: oblique;
+    padding: 25px;
+    margin: 25px;
+    color: #325F07;
+}
+.nosotrosUno {
+    display: flex;
+    justify-self: start;
+    grid-area: main ;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Oswald', sans-serif;  
+    font-size: 32px;
+    font-weight: bolder;
+    color: white;
+    width: auto;
+    height: 350px;
+    padding: 5px;
+    margin: 20px;
+}
+.nosotrosDos{
+    height: 550px;
+    grid-area: aside;
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-self: end;
+    margin: 30px;
+
+}
+.nosotrosTres {
+    display: block;
+    grid-area: main;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    font-weight: bolder;
+    color: rgb(7, 32, 24);
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    margin: 20px;
+}
+.nosotrosCuatro{
+    grid-area: aside;
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-self: start;
+    padding: 10px;
+    margin: 20px;
+    height: 200px;
+}
+.nosotrosCinco{
+    grid-area: aside;
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-self: end;
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    font-weight: bolder;
+    width: 500px;
+    height: 200px;
+    padding: 10px;
+    margin: 20px;
+
+}
+/* PRODUCTOS*/
+.enviosimg{
+    margin: 20px;
+    padding: 20px;
+}
+.preguntas{
+    margin: 20px;
+    padding: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+}
+
+table {
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 6px;
+	border: 100px;
+	padding: 20px;
+    margin: 20px;
+    display: block;
+    overflow: auto;
+    width:fit-content;
+    height: 140px;
+    overflow-y: hidden;
+    font-size: 16px;
+    box-shadow: 3px 5px 5px black;
+}
+
+th, td {
+    border: solid 1px gray;
+    padding: 5px;
+}
+
+th {
+    background-color: tomato;
+    color: whitesmoke;
+    text-align: left;
+}
+.advertencia{
+    margin: 20px;
+    padding: 20px;
+    font-size: 24px;
+    color:whitesmoke;
+    font-style: oblique;
+    font-weight: bolder;
+}
+/*MAIN*/
+footer {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: black;
+    background: linear-gradient(to left, #325F07 0%, #62AC11 0%, #57652a 100%);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    grid-area: footer;
+    position: absolute;
+}
+
+.pieInicio{
+    justify-content: flex-start;
+    height: 20px;
+}
+
+.pieRedes{
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+    width: 24px;
+    height: 24px;
+}
+
+.redes{
+    padding: 10px;
+    display: flex;
+    width: 50%;
+}
+/*FOOTER*/
+
+
+@media (max-width:768px){
+
+    .contenedor{
+        background-color: #D7DAA5;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 410px auto auto 70px;
+        grid-template-areas:"nav"
+                        "header"
+                        "main"
+                        "footer";
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        position: static;
+        display:block;
+
+    }
+    .navegador{
+        background-color: #162c01;
+        display: flex;
+        flex-direction: column;
+        margin: 1px;
+        padding: 1px;
+    }
+    .navegador a{
+        font: 12px;
+    }
+    .lateral{
+        display: flex;
+        flex-direction: column;
+    }
+    .titulo{
+        background-image: url(../img/madera\ pintados.jpeg) ;
+    }
+    .titulo h1{
+        color: black;
+        border-color: wheat;
+    }
+    .principal{
+        background-color: #626b46;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        display: flex;
+        align-self: auto;
+        margin-bottom: 20px;
+        height: 1200px;
+
+    }
+    .principal img{
+        margin: 50px;
+    }
+    .publicidad{
+        background-color: #626b46;
+        display: inline-flex;
+        margin-top: 1200px;
+        margin-bottom: 1px;
+        flex-wrap: wrap;
+        grid-area: main;
+    }
+    .publicidadImg img{
+        height: 100px;
+        width: 100px;
+        margin: 20px;
+    }
+    footer{
+        position: relative;
+        justify-content: space-evenly;
+        font-size: 8px;
+    }
+}

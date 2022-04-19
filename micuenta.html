@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MateStore.com.ar</title>
+    <link rel="shortcut icon" href="./activos/img/logomate2.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/28d772f758.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./activos/css/style.css">
+</head>
+
+<body class="contenedor">
+    <nav class="menu">
+        <div class="logo">
+            <a href="./index.html"><img src="../MateStore Reale/activos/img/logomate2.jpg"></a>
+        </div>
+        <ul class="navegador">
+            <li><a href="./productos.html">PRODUCTOS</a></li>
+            <li><a href="./micuenta.html">MI CUENTA</a></li>
+            <li><a href="./nosotros.html">NOSOTROS</a></li>
+            <li><a href="./envios.html">ENVÍOS</a></li>
+        </ul>
+        <div class="lateral">
+            <a class="lateral__1" href="./micuenta.html"><i class="fa-solid fa-user"></i></a>
+            <a class="lateral__2" href="./productos.html"><i class="fa-solid fa-shop"></i></a>
+            <a class="lateral__3" href="#pie">INFO</a>
+        </div>
+    </nav>
+    <header class="titulo">
+        <h1>MATESTORE</h1>
+    </header>
+    <main class="principal">
+        <section class="login">
+            <!--formulario de registro-->
+            <h4 class="loginTitulo">INICIÁ SESIÓN O CREA TU CUENTA</h4>
+            <form action="archivo.php" method="get">
+                <label for="E-mail"></label>
+                <input class="entradas" name="E-mail" placeholder="E-mail"><br>
+                <label for="contraseña"></label>
+                <input class="entradas" name="contraseña" placeholder="Contraseña"><br>
+                <label for="tyc">términos y condiciones</label>
+                <input type="checkbox" name="tyc" value="acepto"><br>
+                <div class="boton">
+                    <input class="btn" type="submit" value="Ingresar">
+                </div>
+                <a class="entradas" href="#">¿Olvidaste tu contraseña?</a>
+                <a class="entradas" href="#">Registrarse</a>
+            </form>
+        </section>
+        <!--formulario de contacto-->
+        <p class="enviosText">En caso de que tengas alguna consulta podés escribirnos y te contestaremos a la brevedad.
+        </p>
+        <section class="formulario">
+            <form action="archivo.php" method="post">
+                <label for="nombre">Nombre</label>
+                <input class="entradas" name="nombre" placeholder="Nombre">
+                <label for="apellido">Apellido</label>
+                <input class="entradas" name="apellido" placeholder="Apellido">
+                <label for="correo electrónico">E-mail</label>
+                <input class="entradas" name="correo electrónico" placeholder="E-mail">
+                <label for="sexo">mujer</label>
+                <input type="radio" name="sexo" value="mujer">
+                <label for="sexo">hombre</label>
+                <input type="radio" name="sexo" value="hombre">
+                <label for="sexo">no especificado</label>
+                <input type="radio" name="sexo" value="no especificado"><br><br>
+                <label for="comentario">Ingrese su comentario</label><br><br>
+                <textarea name="comentario" placeholder="Máximo 300 caracteres"></textarea><br>
+                <label for="tyc">términos y condiciones</label>
+                <input type="checkbox" name="tyc" value="acepto"><br><br>
+                <div class="boton">
+                    <input class="btn" type="submit" value="Enviar formulario"><br>
+                </div>
+            </form>
+        </section>
+        <!--advertencia-->
+        <p class="enviosText">Nos pondremos en contacto en un plazo máximo de hasta 72hs. hábiles</p>
+
+    </main>
+    <!--barra pedidos devoluciones formas de pago (faltarían paginas para derivar)-->
+    <aside class="publiCuenta">
+        <ul>
+            <li><a href="#">Mis Pedidos</a></li>
+            <li><a href="./envios.html">Devoluciones</a></li>
+            <li><a href="#">Formas de Pago</a></li>
+        </ul>
+    </aside>
+    <footer id="pie">
+        <a id="pieInicio" href="./index.html">INICIO</a>
+        <a>Formas de Pago</a>
+        <a>Contáctanos</a>
+        <a>Ubicación</a>
+        <br>
+        <a id="pieRedes">Seguínos en
+            <img src="../MateStore Reale/activos/img/ico-ig.png">
+            <img src="../MateStore Reale/activos/img/ico-tw.png">
+        </a>
+    </footer>
+</body>
+
+</html>
