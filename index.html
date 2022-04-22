@@ -17,67 +17,94 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/28d772f758.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./activos/css/style.css">
 </head>
 
-<body class="contenedor">
-    <nav class="menu">
-        <div class="logo"> <!--logo hacia el index-->
-            <a href="./index.html"><img src="./activos/img/logomate2.jpg"></a>
+<body class="conteiner-fluid">
+    <nav class="navegador">
+        <div class="container-fluid d-flex justify-content-between align-items-center ">
+            <a class="navbar-brand" href="/index.html">
+                <img src="./activos/img/logomate2.jpg" alt="" width="30" height="24">
+            </a>
+            <a class="navbar-brand" href="/micuenta.html">Mi Cuenta</a>
+            <a class="navbar-brand" href="/productos.html">Productos</a>
+            <a class="navbar-brand" href="/envios.html">Envíos</a>
+            <a class="navbar-brand" href="/nosotros.html">Nosotros</a>
+            <div class="lateral"> <!--barra lateral a MiCuenta (sería carrito), productos y al footer-->
+                <a class="lateral__1" href="./micuenta.html"><i class="fa-solid fa-user"></i></a>
+                <a class="lateral__2" href="./productos.html"><i class="fa-solid fa-shop"></i></a>
+                <a class="lateral__3" href="#pie">INFO</a>
+            </div>
         </div>
-        <ul class="navegador"> <!--navbar-->
-            <li><a href="./productos.html">PRODUCTOS</a></li>
-            <li><a href="./micuenta.html">MI CUENTA</a></li>
-            <li><a href="./nosotros.html">NOSOTROS</a></li>
-            <li><a href="./envios.html">ENVÍOS</a></li>
-        </ul>
-        <div class="lateral"> <!--barra lateral a MiCuenta (sería carrito), productos y al footer-->
-            <a class="lateral__1" href="./micuenta.html"><i class="fa-solid fa-user"></i></a>
-            <a class="lateral__2" href="./productos.html"><i class="fa-solid fa-shop"></i></a>
-            <a class="lateral__3" href="#pie">INFO</a>
-        </div>
+
     </nav>
 
-
-    <header class="titulo">
+    <header class="d-flex justify-content-center text-center align-items-center">
         <h1>MATESTORE</h1>
     </header>
-    <main class="principal">
-        <h2>Tu tienda especializada en mates</h2>
-        <h3>Todos los productos que estás buscando para preparar los mejores mates encontralos acá</h3>
-        <h3>Productos de primera calidad para compartir y regalar a tus seres queridos</h3>
-        <img src="./activos/img/mate.jpg" alt="ERROR AL CARGAR IMÁGEN" width="400">
-        <h3>Algunos consejos para tu preparación:</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/vwrmTSMmcaI" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+
+    <main class=" row col-xs-1">
+        <div class="row justify-content-evenly overflow-hidden d-flex p-10 m-10">
+            <div>
+                <h2 class="col-md col-xs col-lg d-flex text-center justify-content-center m-4">Tu tienda especializada
+                    en mates</h2>
+            </div>
+            <h3 class="col-md-2 col-xs-1 col-lg-2">Todos los productos que estás buscando para preparar los mejores
+                mates encontralos acá
+            </h3>
+            <h3 class="col-md-2 col-xs-1 col-lg-2">Productos de primera calidad para compartir y regalar a tus seres
+                queridos</h3>
+            <div class="col-md-2 col-xs-1 col-lg-2"><img src="./activos/img/mate.jpg"
+                    alt="ERROR AL CARGAR IMÁGEN" width="400"></div>
+        </div>
+        <div class="row" d-flex m-4 p-4>
+            <h3 class="col-md-5" d-flex p-4 m-4>Algunos consejos para tu preparación:</h3>
+            <iframe class="col-md-5" width="560" height="315" src="https://www.youtube.com/embed/vwrmTSMmcaI"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
     </main>
-    <aside class="publicidad"> <!--pequeño adelanto de productos-->
+    <aside class="row" m-4 p-4>
         <h3>Recorré nuestra tienda para encontrar los productos necesarios para poder compartir los mates más ricos.
         </h3>
         <p>Aquí una variedad de nuestros productos:</p>
-        <div class="publicidadImg">
-            <img src="./activos/img/mateaside1.jpg" alt="ERROR AL CARGAR IMÁGEN" width="200">
-            <img src="./activos/img/mateaside2.jpg" alt="ERROR AL CARGAR IMÁGEN" width="175">
-            <img src="./activos/img/termoaside1.jpg" alt="ERROR AL CARGAR IMÁGEN" width="200">
-            <img src="./activos/img/termoaside2.jpg" alt="ERROR AL CARGAR IMÁGEN" width="200">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" col-md-4 d-flex align-items-center>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./activos/img/mateaside1.jpg" class="d-block w-25" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./activos/img/mateaside2.jpg" class="d-block w-25" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./activos/img/termoaside1.jpg" class="d-block w-25" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./activos/img/termoaside2.jpg" class="d-block w-25" alt="...">
+                </div>
+            </div>
         </div>
     </aside>
-
-
-    <footer id="pie">
-            <a id="pieInicio" href="./index.html">INICIO</a>
-            <a>Formas de Pago</a>
-            <a>Contáctanos</a>
-            <a>Ubicación</a>
-            <br>
-            <a id="pieRedes">Seguínos en
-                <img src="./activos/img/ico-ig.png">
-                <img src="./activos/img/ico-tw.png">
-            </a>
+    <footer id="pie" class="d-flex text-align-center justify-content-between align-items-center p-2">
+        <a id="pieInicio" href="./index.html">INICIO</a>
+        <a>Formas de Pago</a>
+        <a>Contáctanos</a>
+        <a>Ubicación</a>
+        <br>
+        <a id="pieRedes">Seguínos en
+            <img src="./activos/img/ico-ig.png">
+            <img src="./activos/img/ico-tw.png">
+        </a>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
