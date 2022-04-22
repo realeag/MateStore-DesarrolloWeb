@@ -138,6 +138,14 @@
     margin: 10px;
     padding: 5px;
 }
+.enviosimg:hover{
+    transform: scale(1.0) translate(200px, 0px);
+    transition: 500ms;
+    }
+.publicidadTable:hover{
+    transform:scale(1.1);
+    transition: all 500ms;
+}
 
 .text {
     font-family: 'Montserrat', sans-serif;
