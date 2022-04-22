@@ -142,7 +142,10 @@
     transform: scale(1.0) translate(195px, 0px);
     transition: 500ms;
     }
-
+    .publicidadTable:hover{
+        transform:scale(1.1);
+        transition: all 550ms;
+    }
 
 .text {
     font-family: 'Montserrat', sans-serif;
