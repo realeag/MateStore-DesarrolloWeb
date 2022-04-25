@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+conteiner-fluid{
+    padding: 0;
+}
 body {
     background: linear-gradient(to right, #D7DAA5 0%, #A1A772 0%, #ab9353 100%);
     position: relative;
@@ -19,6 +22,10 @@ nav{
 .navbar-brand img{
     width: 60px;
     height: 60px;
+}
+nav div a img:hover{
+    transform: scale(1.1);
+    transition: all 500ms;
 }
 
 .lateral__1 {
@@ -56,7 +63,7 @@ header h1{
 }
 main {
     font-family: 'Oswald', sans-serif;
-    text-decoration: solid 48px;
+    text-decoration: solid 48px;    
 }
 main div div h2{
     text-decoration: underline;
@@ -64,6 +71,230 @@ main div div h2{
 carousel-item img{
     width: 300px;
     height: 300px;
+}
+.prod {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    width: 350px;
+    height: 520px;
+    background-color: rgb(88, 185, 120);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 3px 5px 5px black;
+    display: flex;
+    flex-wrap: wrap;
+}
+.principal{
+    font-size: 24px;
+}
+.publicidad{
+    font-size: 24px;
+}
+
+.nosotrosCero{
+    font-style: oblique;
+    font-size: 48px ;
+    text-decoration: underline;
+    padding: 25px;
+    margin: 25px;
+    color: #2d5507;
+}
+.nosotrosUno {
+    display: flex;
+    justify-self: start;
+    grid-area: main ;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Oswald', sans-serif;  
+    font-size: 32px;
+    font-weight: bolder;
+    color: white;
+    width: auto;
+    height: 350px;
+    padding: 5px;
+    margin: 20px;
+}
+.nosotrosDos{
+    height: 550px;
+    
+    display: flex;
+    justify-self: end;
+    margin: 30px;
+
+}
+.nosotrosTres {
+    display: block;
+    grid-area: main;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    font-weight: bolder;
+    color: rgb(7, 32, 24);
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    margin: 20px;
+}
+.nosotrosCuatro{
+    grid-area: aside;
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-self: start;
+    padding: 10px;
+    margin: 20px;
+    height: 200px;
+}
+.nosotrosCinco{
+    grid-area: aside;
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-self: end;
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    font-weight: bolder;
+    width: 500px;
+    height: 200px;
+    padding: 10px;
+    margin: 20px;
+}
+.enviosimg{
+    margin: 20px;
+    padding: 20px;
+}
+.preguntas{
+    margin: 20px;
+    padding: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+}
+.cuentaLista{
+    font-size: 32px;
+    text-decoration: none;
+    list-style: none;
+    margin:50px;
+}
+.login {
+    width: 400px ;
+    padding: 40px;
+    background-color: #668853;
+    margin: 50px;
+    margin-top: 100px;
+    border-radius: 4px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 7px 13px 37px rgb(19, 17, 17);
+    font-size: 16px;
+}
+.loginTitulo{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.entradas{
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 12px;
+    border: 1px solid #8bbd6e;
+    font-size: 16px;
+    display: flex;
+    align-self: auto;
+}
+.login a{
+    color: white;
+    text-decoration: none;
+}
+.login a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.boton{
+    width: 100%;
+    border: none;
+    padding: 12px;
+    color: white;
+    background-color: #8bbd6e;
+    margin: 16px 0;
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    color: white;
+    font-size: 24px;
+    background: none;
+    border: none;
+}
+.boton :hover{
+    color: #162c01;
+    text-decoration:underline;
+}
+
+.formulario{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    width: 400px;
+    height: 670px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 40px;
+    margin: 50px;
+    margin-top: 100px;
+    box-shadow: 7px 13px 37px rgb(19, 17, 17);
+    margin-bottom: 100px;
+    display: flex;
+    align-self: auto;
+}
+
+.enviosText{
+    font-size: 24px;
+    color:whitesmoke;
+    font-style: oblique;
+    font-weight: bolder;
+    margin: 20px;
+}
+table {
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 6px;
+	border: 100px;
+	padding: 20px;
+    margin: 20px;
+    display: block;
+    overflow: auto;
+    width:fit-content;
+    height: 140px;
+    overflow-y: hidden;
+    font-size: 16px;
+    box-shadow: 3px 5px 5px black;
+}
+
+th, td {
+    border: solid 1px gray;
+    padding: 5px;
+}
+
+th {
+    background-color: tomato;
+    color: whitesmoke;
+    text-align: left;
+}
+.enviosimg:hover{
+    transform: scale(1.0) translate(200px, 0px);
+    transition: 800ms;
+    }
+.publicidadTable:hover{
+    transform:scale(1.1);
+    transition: all 500ms;
+}
+.advertencia{
+    margin: 20px;
+    padding: 20px;
+    font-size: 24px;
+    color:whitesmoke;
+    font-style: oblique;
+    font-weight: bolder;
 }
 footer {
     font-family: 'Montserrat', sans-serif;
