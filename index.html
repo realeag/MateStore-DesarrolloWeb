@@ -26,22 +26,37 @@
 </head>
 
 <body class="conteiner-fluid">
-    <nav class="navegador">
-        <div class="container-fluid d-flex justify-content-between align-items-center ">
-            <a class="navbar-brand" href="/index.html">
-                <img src="./activos/img/logomate2.jpg" alt="" width="30" height="24">
-            </a>
-            <a class="navbar-brand" href="./micuenta.html">Mi Cuenta</a>
-            <a class="navbar-brand" href="./productos.html">Productos</a>
-            <a class="navbar-brand" href="./envios.html">Envíos</a>
-            <a class="navbar-brand" href="./nosotros.html">Nosotros</a>
-            <div class="lateral"> <!--barra lateral a MiCuenta (sería carrito), productos y al footer-->
-                <a class="lateral__1" href="./micuenta.html"><i class="fa-solid fa-user"></i></a>
-                <a class="lateral__2" href="./productos.html"><i class="fa-solid fa-shop"></i></a>
-                <a class="lateral__3" href="#pie">INFO</a>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html"><img src="./activos/img/logomate2.jpg"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./micuenta.html">Mi Cuenta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./envios.html">Envíos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <div class="lateral">
+                        <a class="lateral__1" href="./micuenta.html"><i class="fa-solid fa-user"></i></a>
+                        <a class="lateral__2" href="./productos.html"><i class="fa-solid fa-shop"></i></a>
+                        <a class="lateral__3" href="#pie">INFO</a>
+                    </div>
+                </ul>
             </div>
         </div>
-
     </nav>
 
     <header class="d-flex justify-content-center text-center align-items-center">
@@ -54,23 +69,25 @@
                 <h2 class="col-md col-xs col-lg d-flex text-center justify-content-center m-4">Tu tienda especializada
                     en mates</h2>
             </div>
-            <h3 class="col-md-2 col-xs-1 col-lg-2">Todos los productos que estás buscando para preparar los mejores
+            <h3 class="col-md-2 col-xs-1 col-lg-2 m-3 p-4">Todos los productos que estás buscando para preparar los
+                mejores
                 mates encontralos acá
             </h3>
-            <h3 class="col-md-2 col-xs-1 col-lg-2">Productos de primera calidad para compartir y regalar a tus seres
+            <h3 class="col-md-2 col-xs-1 col-lg-2 m-3 p-4">Productos de primera calidad para compartir y regalar a tus
+                seres
                 queridos</h3>
-            <div class="col-md-2 col-xs-1 col-lg-2"><img src="./activos/img/mate.jpg"
+            <div class="col-md-2 col-xs-1 col-lg-2 m-3 p-4"><img src="./activos/img/mate.jpg"
                     alt="ERROR AL CARGAR IMÁGEN" width="400"></div>
         </div>
-        <div class="row" d-flex m-4 p-4>
-            <h3 class="col-md-5" d-flex p-4 m-4>Algunos consejos para tu preparación:</h3>
-            <iframe class="col-md-5" width="560" height="315" src="https://www.youtube.com/embed/vwrmTSMmcaI"
+        <div class="row">
+            <h3 class="col-md-5 m-3 p-4">Algunos consejos para tu preparación:</h3>
+            <iframe class="col-md-5 m-3 p-4" width="560" height="315" src="https://www.youtube.com/embed/vwrmTSMmcaI"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
     </main>
-    <aside class="conteiner row">
+    <aside class="conteiner row m-3 p-4">
         <h3>Recorré nuestra tienda para encontrar los productos necesarios para poder compartir los mates más ricos.
         </h3>
         <p>Aquí una variedad de nuestros productos:</p>

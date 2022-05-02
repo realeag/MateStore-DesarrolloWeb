@@ -26,22 +26,36 @@
 </head>
 
 <body class="conteiner-fluid">
-    <nav class="navegador">
-        <div class="container-fluid d-flex justify-content-between align-items-center ">
-            <a class="navbar-brand" href="/index.html">
-                <img src="./activos/img/logomate2.jpg" alt="" width="30" height="24">
-            </a>
-            <a class="navbar-brand" href="./micuenta.html">Mi Cuenta</a>
-            <a class="navbar-brand" href="./productos.html">Productos</a>
-            <a class="navbar-brand" href="./envios.html">Envíos</a>
-            <a class="navbar-brand" href="./nosotros.html">Nosotros</a>
-            <div class="lateral"> <!--barra lateral a MiCuenta (sería carrito), productos y al footer-->
-                <a class="lateral__1" href="./micuenta.html"><i class="fa-solid fa-user"></i></a>
-                <a class="lateral__2" href="./productos.html"><i class="fa-solid fa-shop"></i></a>
-                <a class="lateral__3" href="#pie">INFO</a>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html"><img src="./activos/img/logomate2.jpg"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./micuenta.html">Mi Cuenta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./envios.html">Envíos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <div class="lateral">
+                        <a class="lateral__1" href="./micuenta.html"><i class="fa-solid fa-user"></i></a>
+                        <a class="lateral__2" href="./productos.html"><i class="fa-solid fa-shop"></i></a>
+                        <a class="lateral__3" href="#pie">INFO</a>
+                    </div>
+                </ul>
             </div>
         </div>
-
     </nav>
 
     <header class="d-flex justify-content-center text-center align-items-center">

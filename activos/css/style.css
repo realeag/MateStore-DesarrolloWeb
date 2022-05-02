@@ -2,19 +2,27 @@
     margin: 0;
     padding: 0;
 }
-conteiner-fluid{
+.conteiner-fluid{
     padding: 0;
+    overflow-x: hidden;
 }
 body {
     background: linear-gradient(to right, #D7DAA5 0%, #A1A772 0%, #ab9353 100%);
     position: relative;
 }
+.navbar{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: white;
+}
+.navbar .nav-item{ /**no encontré forma de hacer funcionar SPACEBETWEEN en boostrap y apliqué margins**/
+    margin-right: 75px;
+    margin-left: 75px;
+}
 nav{
     background: linear-gradient(to left, #325F07 0%, #62AC11 0%, #57652a 100%);
-}
-.navbar-brand{
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-between;
 }
 .navbar-brand:hover{
     color:white;
@@ -27,27 +35,36 @@ nav div a img:hover{
     transform: scale(1.1);
     transition: all 500ms;
 }
-
+.lateral{
+    display: flex;
+    align-items: flex-end;
+}
 .lateral__1 {
     color: white;
+    padding: 5px;
 }
 .lateral__2 {
     color: white;
+    padding: 5px;
 }
 .lateral__3 {
     color: white;
+    padding: 5px;
 }
 .lateral__1:hover{
     transform: scale(1.2);
     transition: all 500ms;
+    color: white;
 }
 .lateral__2:hover{
     transform: scale(1.2);
     transition: all 500ms;
+    color: white;
 }
 .lateral__3:hover{
     transform: scale(1.2);
     transition: all 500ms;
+    color: white;
 }
 header{
     font-family: 'Dancing Script', cursive;
@@ -303,4 +320,23 @@ footer {
     height: 70px;
     box-sizing: border-box;
     color: antiquewhite;
+}
+footer:hover{
+    color: white;
+    text-decoration: none;
+}
+@media (max-width: 768px){
+    .navbar{
+        font-size: 18px;
+        flex-direction: column;
+    }
+    .navbar .nav-item{
+        margin: 0px;
+    }
+    footer{
+        font-size: 10px;
+    }
+    footer img{
+        width:15%;
+    }
 }

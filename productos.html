@@ -26,23 +26,36 @@
 </head>
 
 <body class="conteiner-fluid">
-    <nav class="navegador">
-        <div class="container-fluid d-flex justify-content-between align-items-center ">
-            <a class="navbar-brand" href="/index.html">
-                <img src="./activos/img/logomate2.jpg" alt="" width="30" height="24">
-            </a>
-            <a class="navbar-brand" href="./micuenta.html">Mi Cuenta</a>
-            <a class="navbar-brand" href="./productos.html">Productos</a>
-            <a class="navbar-brand" href="./envios.html">Envíos</a>
-            <a class="navbar-brand" href="./nosotros.html">Nosotros</a>
-            <div class="lateral">
-                <!--barra lateral a MiCuenta (sería carrito), productos y al footer-->
-                <a class="lateral__1" href="./micuenta.html"><i class="fa-solid fa-user"></i></a>
-                <a class="lateral__2" href="./productos.html"><i class="fa-solid fa-shop"></i></a>
-                <a class="lateral__3" href="#pie">INFO</a>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html"><img src="./activos/img/logomate2.jpg"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./micuenta.html">Mi Cuenta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./envios.html">Envíos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <div class="lateral">
+                        <a class="lateral__1" href="./micuenta.html"><i class="fa-solid fa-user"></i></a>
+                        <a class="lateral__2" href="./productos.html"><i class="fa-solid fa-shop"></i></a>
+                        <a class="lateral__3" href="#pie">INFO</a>
+                    </div>
+                </ul>
             </div>
         </div>
-
     </nav>
 
     <header class="d-flex justify-content-center text-center align-items-center">
@@ -70,38 +83,40 @@
                     <p> Mate de calabaza con marco de aluminio. Ampliamente el más elegido.</p>
                     <img id="mates" class="tarjeta__calabaza" src="./activos/img/mateaside1.jpg" width="300">
                     <br>
-                    <button class="botón">COMPRAR</button>
+                    <button class="botón mt-3">COMPRAR</button>
                 </div>
                 <div class="prod">
                     <h3 class="prod__madera">Mate de Madera</h3>
                     <p> Mate de madera pintados con acrílico. Una excelente opción para regalar</p>
                     <img class="tarjeta__madera" src="./activos/img/madera pintados.jpeg" width="300">
                     <br>
-                    <button class="botón">COMPRAR</button>
+                    <button class="botón mt-3">COMPRAR</button>
                 </div>
                 <div class="prod">
                     <h3 class="prod__ceramica">Mate de Cerámica</h3>
                     <p> Mate de cerámica pintados con acrílico. Para los amantes del sabor natural de la yerba.</p>
                     <img class="tarjeta__ceramica" src="./activos/img/ceramica pintados.jpeg" width="300">
                     <br>
-                    <button class="botón">COMPRAR</button>
+                    <button class="botón mt-3">COMPRAR</button>
                 </div>
             </div>
             <br>
             <div class="col-md-12">
                 <div class="prod">
                     <h3 class="prod__inoxidable">Bombilla de Inoxidable</h3>
-                    <p> Mate de cerámica pintados con acrílico. Para los amantes del sabor natural de la yerba.</p>
+                    <p> Mate de cerámica. Para los amantes del sabor natural de la yerba.</p>
                     <img id="bombillas" class="tarjeta__inoxidable" src="./activos/img/bombillasInox.jpg" width="300">
                     <br>
-                    <button class="botón">COMPRAR</button>
+                    <div class="d-flex ">
+                        <button class="botón mt-3">COMPRAR</button>
+                    </div>
                 </div>
                 <div class="prod">
                     <h3 class="prod__alpaca">Bombilla de Alpaca</h3>
                     <p> Mate de cerámica pintados con acrílico. Para los amantes del sabor natural de la yerba.</p>
                     <img class="tarjeta__alpaca" src="./activos/img/bombillasAlpaca.jpg" width="300">
                     <br>
-                    <button class="botón">COMPRAR</button>
+                    <button class="botón mt-3">COMPRAR</button>
                 </div>
             </div>
             <div>
@@ -110,14 +125,14 @@
                     <p> Termo Termolar; practicidad y comodidad en esplendor. Nuestro favorito.</p>
                     <img id="termos" class="tarjeta__alpaca" src="./activos/img/termoaside1.jpg" width="300">
                     <br>
-                    <button class="botón">COMPRAR</button>
+                    <button class="botón mt-3">COMPRAR</button>
                 </div>
                 <div class="prod">
                     <h3 class="prod__alpaca">Termo Stanley 1L</h3>
                     <p>Clásico Termo Stanley de altísima calidad amado por los influencers. </p>
                     <img class="tarjeta__alpaca" src="./activos/img/termoaside2.jpg" width="300">
                     <br>
-                    <button class="botón">COMPRAR</button>
+                    <button class="botón mt-3 ">COMPRAR</button>
                 </div>
             </div>
         </section>
