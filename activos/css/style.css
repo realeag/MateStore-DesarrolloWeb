@@ -139,6 +139,8 @@ carousel-item img{
     margin: 30px;
 
 }
+
+
 .nosotrosTres {
     display: block;
     grid-area: main;
@@ -338,5 +340,12 @@ footer:hover{
     }
     footer img{
         width:15%;
+    }
+    .nosotrosUno{
+        margin-bottom: 100px;
+    }
+    .nosotrosDos{
+        width: 450px;
+        height: 400px;
     }
 }
