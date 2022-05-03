@@ -1,0 +1,23 @@
+.prod {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: antiquewhite;
+    background-color: $fondoTarjetas;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 3px 5px 5px black;
+    display: flex;
+    flex-wrap: wrap;
+    button{
+        padding: 5px 20px;
+        margin: 50x;
+        background-color: $fondoBoton;
+        color: antiquewhite;
+        display: flex;
+    }
+    button:hover{
+        color: #162c01;
+        text-decoration:underline;
+    }
+}

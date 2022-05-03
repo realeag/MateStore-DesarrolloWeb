@@ -1,3 +1,9 @@
-body {
-    background-color: aquamarine;
+@import "_variables";
+@import "_productos";
+@import "_nosotros";
+
+body{
+    background: $colorFondo;
+    position: relative;
 }
+

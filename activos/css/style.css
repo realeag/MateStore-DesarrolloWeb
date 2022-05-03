@@ -1,4 +1,376 @@
+.prod {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: antiquewhite;
+  background-color: #668853;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 3px 5px 5px black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.prod button {
+  padding: 5px 20px;
+  margin: 50x;
+  background-color: #8bbd6e;
+  color: antiquewhite;
+  display: flex;
+}
+
+.prod button:hover {
+  color: #162c01;
+  text-decoration: underline;
+}
+
+.principal {
+  font-size: 24px;
+}
+
+.principal .nosotrosCero {
+  font-style: oblique;
+  font-size: 48px;
+  text-decoration: underline;
+  padding: 25px;
+  margin: 25px;
+  text-align: center;
+  color: #2d5507;
+}
+
+.principal .nosotrosUno {
+  display: flex;
+  justify-self: start;
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  font-weight: bolder;
+  color: white;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  margin: 20px;
+}
+
+.principal .nosotrosDos {
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  font-weight: bolder;
+  color: #072018;
+  width: 90%;
+  padding: 10px;
+  margin: 20px;
+}
+
+.publicidad {
+  font-size: 24px;
+}
+
+.publicidad .nosotrosTres {
+  height: 600px;
+  display: flex;
+  align-self: center;
+  margin: 30px;
+}
+
+.publicidad .nosotrosCuatro {
+  display: flex;
+  justify-self: start;
+  padding: 10px;
+  margin: 20px;
+  height: 300px;
+}
+
+.publicidad .nosotrosCinco {
+  display: flex;
+  justify-self: end;
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  font-weight: bolder;
+  width: 500px;
+  height: 200px;
+  padding: 10px;
+  margin: 20px;
+}
+
 body {
-  background-color: aquamarine;
+  background: linear-gradient(to right, #D7DAA5 0%, #A1A772 0%, #ab9353 100%);
+  position: relative;
 }
 /*# sourceMappingURL=style.css.map */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.conteiner-fluid{
+  padding: 0;
+  overflow-x: hidden;
+}
+body {
+  background: linear-gradient(to right, #D7DAA5 0%, #A1A772 0%, #ab9353 100%);
+  position: relative;
+}
+.navbar{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  color: white;
+}
+.navbar .nav-item{ /**no encontré forma de hacer funcionar SPACEBETWEEN en boostrap y apliqué margins**/
+  margin-right: 75px;
+  margin-left: 75px;
+}
+nav{
+  background: linear-gradient(to left, #325F07 0%, #62AC11 0%, #57652a 100%);
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-brand:hover{
+  color:white;
+}
+.navbar-brand img{
+  width: 60px;
+  height: 60px;
+}
+nav div a img:hover{
+  transform: scale(1.1);
+  transition: all 500ms;
+}
+.lateral{
+  display: flex;
+  align-items: flex-end;
+}
+.lateral__1 {
+  color: white;
+  padding: 5px;
+}
+.lateral__2 {
+  color: white;
+  padding: 5px;
+}
+.lateral__3 {
+  color: white;
+  padding: 5px;
+}
+.lateral__1:hover{
+  transform: scale(1.2);
+  transition: all 500ms;
+  color: white;
+}
+.lateral__2:hover{
+  transform: scale(1.2);
+  transition: all 500ms;
+  color: white;
+}
+.lateral__3:hover{
+  transform: scale(1.2);
+  transition: all 500ms;
+  color: white;
+}
+header{
+  font-family: 'Dancing Script', cursive;
+  background-image: url(../img/fondomates.jpeg);
+  color: white;
+  text-shadow: -2px -2px 1px #000;
+  background-attachment: fixed;
+  height: 400px;
+  justify-content: center;
+}
+header h1{
+  font-size: 64px;
+}
+main {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: solid 48px;    
+}
+main div div h2{
+  text-decoration: underline;
+}
+carousel-item img{
+  width: 300px;
+  height: 300px;
+}
+
+
+.enviosimg{
+  margin: 20px;
+  padding: 20px;
+}
+.preguntas{
+  margin: 20px;
+  padding: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+}
+.cuentaLista{
+  font-size: 32px;
+  text-decoration: none;
+  list-style: none;
+  margin:50px;
+}
+.login {
+  width: 400px ;
+  padding: 40px;
+  background-color: #668853;
+  margin: 50px;
+  margin-top: 100px;
+  border-radius: 4px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 7px 13px 37px rgb(19, 17, 17);
+  font-size: 16px;
+}
+.loginTitulo{
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.entradas{
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 12px;
+  border: 1px solid #8bbd6e;
+  font-size: 16px;
+  display: flex;
+  align-self: auto;
+}
+.login a{
+  color: white;
+  text-decoration: none;
+}
+.login a:hover{
+  color: white;
+  text-decoration: underline;
+}
+.boton{
+  width: 100%;
+  border: none;
+  padding: 12px;
+  color: white;
+  background-color: #8bbd6e;
+  margin: 16px 0;
+  display: flex;
+  justify-content: center;
+}
+.btn{
+  color: white;
+  font-size: 24px;
+  background: none;
+  border: none;
+}
+.boton :hover{
+  color: #162c01;
+  text-decoration:underline;
+}
+
+.formulario{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  width: 400px;
+  height: 670px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  padding: 40px;
+  margin: 50px;
+  margin-top: 100px;
+  box-shadow: 7px 13px 37px rgb(19, 17, 17);
+  margin-bottom: 100px;
+  display: flex;
+  align-self: auto;
+}
+
+.enviosText{
+  font-size: 24px;
+  color:whitesmoke;
+  font-style: oblique;
+  font-weight: bolder;
+  margin: 20px;
+}
+table {
+  width: 100%;
+  font-family: 'Oswald', sans-serif;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 6px;
+border: 100px;
+padding: 20px;
+  margin: 20px;
+  display: block;
+  overflow: auto;
+  width:fit-content;
+  height: 140px;
+  overflow-y: hidden;
+  font-size: 16px;
+  box-shadow: 3px 5px 5px black;
+}
+
+th, td {
+  border: solid 1px gray;
+  padding: 5px;
+}
+
+th {
+  background-color: tomato;
+  color: whitesmoke;
+  text-align: left;
+}
+.enviosimg:hover{
+  transform: scale(1.0) translate(200px, 0px);
+  transition: 800ms;
+  }
+.publicidadTable:hover{
+  transform:scale(1.1);
+  transition: all 500ms;
+}
+.advertencia{
+  margin: 20px;
+  padding: 20px;
+  font-size: 24px;
+  color:whitesmoke;
+  font-style: oblique;
+  font-weight: bolder;
+}
+footer {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to left, #325F07 0%, #62AC11 0%, #57652a 100%);
+  width: 100%;
+  height: 70px;
+  box-sizing: border-box;
+  color: antiquewhite;
+}
+footer:hover{
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 768px){
+  .navbar{
+      font-size: 18px;
+      flex-direction: column;
+  }
+  .navbar .nav-item{
+      margin: 0px;
+  }
+  footer{
+      font-size: 10px;
+  }
+  footer img{
+      width:15%;
+  }
+  .nosotrosTres{
+      width: 500px;
+      height: 200px;
+  }
+  .nosotrosCuatro{
+    height: 100px;
+    width: 450px;
+  }
+  .tarjetas{
+display: flex;
+flex-direction: column;
+  }
+  .tarjetas div{
+display: flex;
+flex-wrap: wrap;
+  }
+}
