@@ -96,22 +96,44 @@
         <h3>Recorré nuestra tienda para encontrar los productos necesarios para poder compartir los mates más ricos.
         </h3>
         <p>Aquí una variedad de nuestros productos:</p>
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./activos/img/mateaside1.jpg" class="d-block w-25" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./activos/img/mateaside2.jpg" class="d-block w-25" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./activos/img/termoaside1.jpg" class="d-block w-25" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./activos/img/termoaside2.jpg" class="d-block w-25" alt="...">
-                </div>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-        </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./activos/img/delivery-trucks-5572117_640.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>ENVÍOS A TODO EL PAÍS</h5>
+                  <p>Envíos sin costo en compras superiores a ARS 15000</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./activos/img/arrows-4838659.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>POLITICA DE CAMBIOS</h5>
+                  <p>Garantía de 6 meses por falla del producto.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./activos/img/lock-152879_640.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>SITIO SEGURO</h5>
+                  <p>Resguardamos tus datos.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </aside>
     <footer id="pie" class="d-flex text-align-center justify-content-between align-items-center p-2">
         <a id="pieInicio" href="./index.html">INICIO</a>
