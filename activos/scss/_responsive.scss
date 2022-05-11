@@ -13,6 +13,12 @@
     footer img{
         width:15%;
     }
+    .mainTit{
+        font-size: 28px;
+    }
+    .mainPromo{
+        font-size: 24px;
+    }
     .consejosUno{
         display: flex;
         flex-wrap: wrap;
@@ -47,11 +53,11 @@
         text-align:center;
     }  
     .enviosPagos img{
-        margin: 10px;
-        display: flex;
+        margin: 2px;
+        display: none;
         flex-wrap: wrap;
     }
-    .enviosimg:hover {
+    .envios img:hover {
         transform: scale(1) translate(200px, 0px);
         transition: 800ms;
     }

@@ -1,13 +1,50 @@
 main {
-    font-family: 'Oswald', sans-serif;
-    text-decoration: solid 48px;   
-    text-align: center; 
-  }
-  main div div h2{
-    text-decoration: underline;
-  }
-  carousel-item img{
-    width: 300px;
-    height: 300px;
-  }
+  font-family: "Oswald", sans-serif;
+  text-decoration: solid 48px;
+  text-align: center;
+}
+.mainTit {
+  font-size: 48px;
+  text-decoration: underline;
+  padding: 25px;
+  margin: 25px;
+  color: #2d5507;
+  font-weight: bolder;
+}
+.mainPromo {
+  font-size: 32px;
+  text-align: left;
+}
+.mainImg {
+  padding: 30px;
+  margin-right: 50px;
+}
+carousel-item img {
+  width: 300px;
+  height: 300px;
+}
+.listaProductos ul {
+  list-style: none;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: bolder;
+  width: 100%;
+  margin: 20px;
+  height: 90px;
+}
+.listaProductos ul li a {
+  border: map-get($boton, bordes);
+  border-radius: map-get($boton, radio);
+  padding: map-get($boton, padd);
+  border: 2px solid black;
+  background-color: #630515;
+  text-decoration: none;
+  color: antiquewhite;
   
+}
+.listaProductos ul li a:hover{
+  color: #c48aa7;
+  text-decoration: underline;
+}
