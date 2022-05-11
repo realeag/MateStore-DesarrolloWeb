@@ -19,6 +19,7 @@
     <script src="https://kit.fontawesome.com/28d772f758.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -29,7 +30,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html"><img src="./activos/img/logomate2.jpg"></a>
+            <a class="navbar-brand" href="./index.html"><img src="./activos/img/logomate2.png"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -63,8 +64,9 @@
     </header>
     <main class="principal">
         <ol class="preguntas">
-            <li>
+            <li data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <!--dudas y consultas envios/devol-->
+
                 <h4 class="preguntasUno">¿DÓNDE ESTÁ MI PEDIDO?</h4>
                 <p>Te notificaremos por email los diferentes cambios de estado de tu pedido.
 
@@ -77,13 +79,13 @@
                     Esto te debería llevar a nuestra línea temporal con opción al tracking del transportista (a todos
                     los métodos de envío que no sean tienda).<p>
             </li>
-            <li>
+            <li data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <h4 class="preguntasDos">¿CUÁLES SON LOS PLAZOS DE ENTREGA?</h4>
                 <p>Recibirás tu pedido entre 5 y 7 días laborables después de su tramitación.
 
                     El precio del envío lo verás reflejado en el importe final de tu pedido.</p>
             </li>
-            <li>
+            <li data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <h4 class="preguntasTres">¿CÓMO PUEDO CANCELAR MI PEDIDO?</h4>
                 <p>Puedes cancelar tu pedido siempre y cuando no esté “Empaquetado”.
 
@@ -94,10 +96,10 @@
     </main>
     <aside class="publicidad">
         <!--tabla precios envios-->
-        <img class="enviosimg" src="./activos/img/ship.jpg" alt="IMÁGEN ENVÍOS">
-        <table border="1" cellpadding="2" class="publicidadTable">
+        <img class="enviosimg" src="./activos/img/camion-de-reparto.png" alt="IMÁGEN ENVÍOS">
+        <table border="1" cellpadding="2" class="publicidadTable d-flex ml-5">
             <tr>
-                <th></th>
+                <th class="text-center">TARIFAS</th>
                 <th>Buenos Aires</th>
                 <th>Córdoba</th>
                 <th>Santa Fé</th>
@@ -127,7 +129,7 @@
     </aside>
     <footer id="pie" class="d-flex text-align-center justify-content-between align-items-center p-2">
         <a id="pieInicio" href="./index.html">INICIO</a>
-        <a>Formas de Pago</a>
+        <a href="./micuenta.html">Formas de Pago</a>
         <a>Contáctanos</a>
         <a>Ubicación</a>
         <br>
@@ -136,6 +138,10 @@
             <img src="./activos/img/ico-tw.png">
         </a>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>

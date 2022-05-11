@@ -1,0 +1,35 @@
+.botonProd{
+    width: map-get($boton, ancho );
+    border: map-get($boton, bordes);
+    border-radius: map-get($boton, radio );
+    padding: map-get($boton, padd);
+    background-color: $fondoBoton;
+    margin: 16px 0px;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    height: 48px;
+    box-sizing: border-box;
+}
+.botonMiCuenta{
+    @extend .botonProd;
+    background-color: $fondoBoton;
+    margin: 16px 0px;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    height: auto;
+
+}
+.botonProd:hover{
+    color: #162c01;
+    text-decoration:underline;
+}
+.btn{
+    @extend .botonProd;
+    color: black;
+    font-size: 24px;
+    background: none;
+    background-color: #bbb7b7;
+  }

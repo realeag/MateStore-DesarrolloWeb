@@ -1,0 +1,80 @@
+.cuentaLista {
+  font-size: 32px;
+  text-decoration: none;
+  list-style: none;
+  margin: 50px;
+}
+.login {
+  width: 400px;
+  padding: 40px;
+  background-color: $fondoTarjetas;
+  margin: 50px;
+  margin-top: 100px;
+  border-radius: 4px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 7px 13px 37px rgb(19, 17, 17);
+  font-size: 16px;
+}
+.loginTitulo {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.entradas {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 12px;
+  border: 1px solid $fondoBoton;
+  font-size: 16px;
+  display: flex;
+  align-self: auto;
+}
+.login a {
+  color: white;
+  text-decoration: none;
+}
+.login a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.formulario {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  width: 400px;
+  height: 670px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  padding: 40px;
+  margin: 50px;
+  margin-top: 100px;
+  box-shadow: 7px 13px 37px rgb(19, 17, 17);
+  margin-bottom: 100px;
+  display: flex;
+  text-align: initial ;
+}
+.enviosText {
+  font-size: 24px;
+  color: whitesmoke;
+  font-style: oblique;
+  font-weight: bolder;
+  margin: 20px;
+  margin-bottom: 40px;
+}
+.enviosPagos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  h4 {
+    font-size: 24px;
+    margin: 20px;
+    font-style: $fuenteTextos;
+  }
+  img {
+    margin: 25px;
+    display: flex;
+  }
+}

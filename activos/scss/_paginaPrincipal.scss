@@ -1,0 +1,91 @@
+/**estilos de NAVBAR y FOOTER**/
+
+.navbar{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: white;
+  }
+  .navbar .nav-item{ /**no encontré forma de hacer funcionar SPACEBETWEEN en boostrap y apliqué margins**/
+    margin-right: 75px;
+    margin-left: 75px;
+  }
+  nav{
+    background: $colorBarras;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar-brand:hover{
+    color:white;
+  }
+  .navbar-brand img{
+    width: 60px;
+    height: 60px;
+  }
+  nav div a img:hover{
+    transform: scale(1.1);
+    transition: all 500ms;
+  }
+  .lateral{
+    display: flex;
+    align-items: flex-end;
+  }
+  .lateral__1 {
+    color: white;
+    padding: 5px;
+  }
+  .lateral__2 {
+    color: white;
+    padding: 5px;
+  }
+  .lateral__3 {
+    color: white;
+    padding: 5px;
+  }
+  .lateral__1:hover{
+    transform: scale(1.2);
+    transition: all 500ms;
+    color: white;
+  }
+  .lateral__2:hover{
+    transform: scale(1.2);
+    transition: all 500ms;
+    color: white;
+  }
+  .lateral__3:hover{
+    transform: scale(1.2);
+    transition: all 500ms;
+    color: white;
+  }
+  header{
+    background-image: url(../img/fondomates2.jpg);
+    color: white;
+    text-shadow: -2px -2px 1px #000;
+    background-attachment: fixed;
+    height: 400px;
+    justify-content: center;
+  }
+  header h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 64px;
+    text-shadow: -2px -2px 3px #000;
+  }
+
+
+  footer {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to left, #325F07 0%, #62AC11 0%, #57652a 100%);
+    width: 100%;
+    height: 70px;
+    box-sizing: border-box;
+    color: antiquewhite;
+  }
+  footer a{
+    text-decoration: none;
+    color: white;
+  }
+  footer a:hover{
+    color: white;
+    text-decoration: underline;
+  }
