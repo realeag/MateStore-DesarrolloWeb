@@ -12,4 +12,6 @@ Hice varias mejoras en las páginas:
     _agregué animaciones "fade" a MiCuenta y Envíos.
     _optimicé img Header, img Productos
     _mejora del logo
-    
+SEO:
+    _descripción en cada página
+    _distinto título en cada página
