@@ -374,7 +374,7 @@ th {
     display: none;
     flex-wrap: wrap;
   }
-  .envios img:hover {
+  .enviosimg:hover {
     transform: scale(1) translate(200px, 0px);
     transition: 800ms;
   }
