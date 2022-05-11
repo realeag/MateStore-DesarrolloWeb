@@ -13,11 +13,11 @@
     footer img{
         width:15%;
     }
-    .nosotrosTres{
-        width: 500px;
-        height: 200px;
+    .consejosUno{
+        display: flex;
+        flex-wrap: wrap;
     }
-    .nosotrosCuatro{
+    .consejosTres{
         height: 100px;
         width: 450px;
     }

@@ -22,67 +22,66 @@
   font-size: 24px;
 }
 
-.principal .nosotrosCero {
-  font-style: oblique;
+.principal .consejosTit {
+  font-family: "Oswald", sans-serif;
   font-size: 48px;
   text-decoration: underline;
   padding: 25px;
   margin: 25px;
   text-align: center;
   color: #2d5507;
+  font-weight: bolder;
 }
 
-.principal .nosotrosUno {
-  display: flex;
-  justify-self: start;
-  font-family: "Oswald", sans-serif;
-  font-size: 32px;
-  font-weight: bolder;
-  color: white;
-  width: auto;
-  height: auto;
-  padding: 5px;
+.principal div ol {
   margin: 20px;
 }
 
-.principal .nosotrosDos {
-  display: block;
-  font-family: "Oswald", sans-serif;
-  font-size: 32px;
+.principal div ol li {
+  text-align: left;
+  font-size: 36px;
+  color: #630515;
   font-weight: bolder;
-  color: #072018;
-  width: 90%;
-  padding: 10px;
-  margin: 20px;
+}
+
+.principal div ol h3 {
+  text-align: left;
+}
+
+.principal div ol p {
+  font-size: 30px;
+  font-weight: bolder;
+  text-decoration: underline cadetblue;
 }
 
 .publicidad {
   font-size: 24px;
 }
 
-.publicidad .nosotrosTres {
-  height: 600px;
-  display: flex;
-  align-self: center;
-  margin: 30px;
+.publicidad .colegas {
+  font-size: 48px;
+  text-decoration: underline;
+  padding: 25px;
+  margin: 25px;
+  text-align: center;
+  color: #2d5507;
+  font-weight: bolder;
 }
 
-.publicidad .nosotrosCuatro {
+.publicidad .consejosTres {
   display: flex;
-  justify-self: start;
+  align-items: center;
   padding: 10px;
   margin: 20px;
   height: 300px;
 }
 
-.publicidad .nosotrosCinco {
+.publicidad .consejosDos {
   display: flex;
-  justify-self: end;
   font-family: "Oswald", sans-serif;
   font-size: 32px;
   font-weight: bolder;
-  width: 500px;
-  height: 200px;
+  height: auto;
   padding: 10px;
   margin: 20px;
 }
@@ -216,13 +215,13 @@ carousel-item img {
 }
 
 table {
+  border: 100px;
+  padding: none;
   width: 100%;
   font-family: "Oswald", sans-serif;
   border-collapse: collapse;
   background-color: white;
   border-radius: 6px;
-  border: 100px;
-  padding: none;
   margin: 20px 20px 20px 40px;
   display: block;
   overflow: auto;
@@ -289,11 +288,11 @@ th {
   footer img {
     width: 15%;
   }
-  .nosotrosTres {
-    width: 500px;
-    height: 200px;
+  .consejosUno {
+    display: flex;
+    flex-wrap: wrap;
   }
-  .nosotrosCuatro {
+  .consejosTres {
     height: 100px;
     width: 450px;
   }

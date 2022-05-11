@@ -1,17 +1,19 @@
-
+@mixin contenedor ($borde, $pad){
+    border: $borde;
+    padding: $pad;
+}
 .preguntas{
     text-align: center;
     margin-top: 30px;
     list-style: none;
 }
 table{
+  @include contenedor (100px, none);
   width: 100%;
   font-family: "Oswald", sans-serif;
   border-collapse: collapse;
   background-color: white;
   border-radius: 6px;
-  border: 100px;
-  padding: none;
   margin: 20px 20px 20px 40px;
   display: block;
   overflow: auto;
@@ -25,8 +27,7 @@ table{
 
 th,
 td {
-  border: solid 1px gray;
-  padding: 5px;
+  @include contenedor (solid 1px gray, 5px)
 }
 
 th {
