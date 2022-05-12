@@ -20,3 +20,11 @@ SEO:
     _descripción distintiva a cada página
     _título distintivo a cada página
     _agregué texto alternativo para cada img
+
+Para 3ra entrega de Proyecto Final apliqué:
+    _Mejoras en las tarjetas de Productos.
+    _Mejoras de posicionamiento en Productos
+    _Posicionamiento en media query Mi Cuenta.
+    _Agregué contenido en Consejos y mejoré visualización mobile.
+    _contenido navbar mobile centrado.
+    _

@@ -1,15 +1,19 @@
 .prod {
-    font-family: 'Poppins', sans-serif;
+    font-family: $fuenteTextos;
     font-size: 16px;
-    color: antiquewhite;
-    background-color: $fondoTarjetas;
-    border-radius: 10px;
+    background-color: none;
     padding: 20px;
-    margin: 10px;
-    box-shadow: 3px 5px 5px black;
+    margin: 20px;
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    color: black;
+    font-weight: bolder;
+    position: relative;
+    justify-content: center;
+}
+.prod h3{
+    position: inherit;
 }
 .prod img{
     width: 300px;

@@ -1,16 +1,21 @@
 @charset "UTF-8";
 .prod {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
-  color: antiquewhite;
-  background-color: #668853;
-  border-radius: 10px;
+  background-color: none;
   padding: 20px;
-  margin: 10px;
-  box-shadow: 3px 5px 5px black;
+  margin: 20px;
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  color: black;
+  font-weight: bolder;
+  position: relative;
+  justify-content: center;
+}
+
+.prod h3 {
+  position: inherit;
 }
 
 .prod img {
@@ -19,6 +24,7 @@
 }
 
 .principal {
+  margin: 10%;
   font-size: 24px;
 }
 
@@ -56,9 +62,11 @@
 
 .publicidad {
   font-size: 24px;
+  margin: 10%;
 }
 
-.publicidad .colegas {
+.publicidad .curado {
+  font-family: "Oswald", sans-serif;
   font-size: 48px;
   text-decoration: underline;
   padding: 25px;
@@ -68,22 +76,31 @@
   font-weight: bolder;
 }
 
-.publicidad .consejosTres {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  margin: 20px;
-  height: 300px;
-}
-
-.publicidad .consejosDos {
-  display: flex;
+.publicidad .curadoDos {
+  list-style: none;
   font-family: "Oswald", sans-serif;
-  font-size: 32px;
-  font-weight: bolder;
+  font-size: 36px;
   height: auto;
   padding: 10px;
   margin: 20px;
+}
+
+.publicidad .curadoDos li {
+  font-weight: bolder;
+  display: flex;
+}
+
+.publicidad .curadoDos p {
+  font-size: 30px;
+}
+
+.publicidad .curadoTres {
+  display: flex;
+  align-self: center;
+  padding: 10px;
+  width: 50%;
+  margin: 20px;
+  height: 300px;
 }
 
 /**estilos de NAVBAR y FOOTER**/
@@ -319,9 +336,14 @@ th {
   .navbar {
     font-size: 18px;
     flex-direction: column;
+    text-align: center;
   }
   .navbar .nav-item {
     margin: 0px;
+  }
+  .lateral {
+    margin-top: 20px;
+    align-self: center;
   }
   footer {
     font-size: 10px;
@@ -382,6 +404,43 @@ th {
     font-size: 15px;
     margin-left: 45px;
   }
+  .principal .consejosTit {
+    font-size: 30px;
+  }
+  .principal div ol li {
+    font-size: 25px;
+  }
+  .principal div ol h3 {
+    font-size: 20px;
+  }
+  .principal div ol p {
+    font-size: 22px;
+  }
+  .publicidad .curado {
+    font-size: 30px;
+  }
+  .publicidad .curadoDos {
+    font-size: 25px;
+  }
+  .publicidad .curadoDos p {
+    font-size: 22px;
+  }
+  .publicidad .curadoTres {
+    width: 350px;
+    height: 200px;
+  }
+  .conteiner-fluid .login {
+    margin-left: 30px;
+  }
+  .conteiner-fluid .formulario {
+    margin-left: 30px;
+  }
+  .conteiner-fluid .enviosText {
+    margin-left: 15px;
+  }
+  .conteiner-fluid .cuentaLista {
+    margin-left: 30px;
+  }
 }
 
 .cuentaLista {
@@ -414,7 +473,7 @@ th {
   padding: 10px;
   border-radius: 3px;
   margin-bottom: 12px;
-  border: 1px solid #8bbd6e;
+  border: 1px solid #7ca763;
   font-size: 16px;
   display: flex;
   align-self: auto;
@@ -478,8 +537,8 @@ th {
   border: none;
   border-radius: 3px;
   padding: 12px;
-  background-color: #8bbd6e;
-  margin: 16px 0px;
+  background-color: #7ca763;
+  margin: 0px;
   color: antiquewhite;
   display: flex;
   justify-content: center;
@@ -488,7 +547,7 @@ th {
 }
 
 .botonMiCuenta {
-  background-color: #8bbd6e;
+  background-color: #7ca763;
   margin: 16px 0px;
   color: antiquewhite;
   display: flex;

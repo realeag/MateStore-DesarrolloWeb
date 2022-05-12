@@ -2,9 +2,14 @@
     .navbar{
         font-size: 18px;
         flex-direction: column;
+        text-align: center;
     }
     .navbar .nav-item{
         margin: 0px;
+    }
+    .lateral{
+        margin-top: 20px;
+        align-self: center;
     }
     footer{
         font-size: 10px;
@@ -65,5 +70,47 @@
         font-size: 15px;
         margin-left: 45px;
     }
-
+    .principal{
+        .consejosTit{
+            font-size: 30px;
+        }
+        div ol li {
+            font-size: 25px;
+            }
+        div ol h3{
+            font-size: 20px;
+        }
+        div ol p{
+            font-size: 22px;
+        }
+    }
+    .publicidad{
+        .curado{
+            font-size: 30px;
+        }
+        .curadoDos{
+            font-size:  25px;
+            p{
+                font-size: 22px;
+            }
+        }
+        .curadoTres{
+            width: 350px;
+            height: 200px;
+        }
+    }
+    .conteiner-fluid{
+        .login{
+            margin-left: 30px;
+        }
+        .formulario{
+            margin-left: 30px;
+        }
+        .enviosText{
+            margin-left: 15px;
+        }
+        .cuentaLista{
+            margin-left: 30px;
+        }
+    }
 }

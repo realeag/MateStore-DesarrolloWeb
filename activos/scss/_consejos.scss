@@ -1,4 +1,5 @@
 .principal{
+    margin: 10%;
     font-size: 24px;
     .consejosTit{
         font-family: $fuenteTextos;
@@ -30,7 +31,9 @@
 }
 .publicidad{
     font-size: 24px;
-    .colegas{
+    margin: 10%;
+    .curado{
+        font-family: $fuenteTextos;
         font-size: 48px ;
         text-decoration: underline;
         padding: 25px;
@@ -39,20 +42,27 @@
         color: #2d5507;
         font-weight: bolder;    
     }
-    .consejosTres{
-        display: flex;
-        align-items: center;
-        padding: 10px;
-        margin: 20px;
-        height: 300px;
-    }
-    .consejosDos{
-        display: flex;
+    .curadoDos{
+        list-style: none;
         font-family: $fuenteTextos;
-        font-size: 32px;
-        font-weight: bolder;
+        font-size: 36px;
         height: auto;
         padding: 10px;
         margin: 20px;
+        li {
+            font-weight: bolder;
+            display: flex;
+        }
+        p{
+            font-size: 30px;
+        }
+    }
+    .curadoTres{
+        display: flex;
+        align-self: center;
+        padding: 10px;
+        width: 50%;
+        margin: 20px;
+        height: 300px;
     }
 }
