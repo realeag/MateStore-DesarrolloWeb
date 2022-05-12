@@ -38,13 +38,13 @@ carousel-item img {
   border: map-get($boton, bordes);
   border-radius: map-get($boton, radio);
   padding: map-get($boton, padd);
-  border: 2px solid black;
-  background-color: #630515;
+  border: 2px solid #575a58;
+  background-color: #4f8a58;
   text-decoration: none;
   color: antiquewhite;
   
 }
 .listaProductos ul li a:hover{
-  color: #c48aa7;
+  color: #31061b;
   text-decoration: underline;
 }
