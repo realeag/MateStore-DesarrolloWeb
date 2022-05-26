@@ -1,164 +1,163 @@
-@media (max-width: 768px){
-    
-    .navbar{
-        font-size: 18px;
-        flex-direction: column;
-        text-align: center;
+@media (max-width: 768px) {
+  .navbar {
+    font-size: 18px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar .nav-item {
+    margin: 0px;
+  }
+  .lateral {
+    margin-top: 20px;
+    align-self: center;
+  }
+  footer {
+    font-size: 10px;
+    height: auto;
+  }
+  .footerTerm {
+    display: flex;
+    justify-content: space-evenly;
+    height: 3rem;
+  }
+  .mainTit {
+    font-size: 28px;
+  }
+  .mainPromo {
+    font-size: 24px;
+  }
+  .consejosUno {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .consejosTres {
+    height: 100px;
+    width: 450px;
+  }
+  .tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  .tarjetas div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cuentaLista {
+    text-align: center;
+  }
+  .formulario {
+    width: auto;
+  }
+  .enviosText {
+    margin: 20px;
+    text-align: center;
+  }
+  .enviosPagos {
+    display: none;
+  }
+  .enviosPagos h4 {
+    font-size: 10px;
+    margin: 20px;
+    font-style: $fuenteTextos;
+    text-align: center;
+  }
+  .enviosPagos img {
+    margin: 2px;
+    display: none;
+    flex-wrap: wrap;
+  }
+  .enviosimg:hover {
+    transform: scale(1) translate(200px, 0px);
+    transition: 800ms;
+  }
+  .publicidadTable {
+    font-size: 15px;
+    margin-left: 45px;
+  }
+  .principal {
+    .consejosTit {
+      font-size: 30px;
     }
-    .navbar .nav-item{
-        margin: 0px;
+    div ol li {
+      font-size: 25px;
     }
-    .lateral{
-        margin-top: 20px;
-        align-self: center;
+    div ol h3 {
+      font-size: 20px;
     }
-    footer{
-        font-size: 10px;
-        height: auto;
+    div ol p {
+      font-size: 22px;
     }
-    .footerTerm{
-        display: flex;
-        justify-content: space-evenly;
-        height: 3rem;
+    .consejosUno {
+      border-radius: 30px;
+      margin: 5px;
     }
-    .mainTit{
-        font-size: 28px;
+  }
+  .publicidad {
+    .curado {
+      font-size: 30px;
     }
-    .mainPromo{
-        font-size: 24px;
+    .curadoDos {
+      font-size: 25px;
+      p {
+        font-size: 22px;
+      }
     }
-    .consejosUno{
-        display: flex;
-        flex-wrap: wrap;
+    .curadoTres {
+      width: 350px;
+      height: 200px;
     }
-    .consejosTres{
-        height: 100px;
-        width: 450px;
+  }
+  .conteiner-fluid {
+    .login {
+      margin-left: 30px;
     }
-    .tarjetas{
-        display: flex;
-        flex-direction: column;
-        align-self: center;
+    .formulario {
+      margin-left: 30px;
     }
-    .tarjetas div{
-        display: flex;
-        flex-wrap: wrap;
+    .enviosText {
+      margin-left: 15px;
     }
-    .cuentaLista{
-        text-align: center;
+    .cuentaLista {
+      margin-left: 30px;
     }
-    .formulario{
-        width: auto;
-    }
-    .enviosText{
-        margin: 20px;
-        text-align: center;
-    }
-    .enviosPagos{
-        display: none;
-    }
-    .enviosPagos h4{
-        font-size: 10px;
-        margin: 20px;
-        font-style:$fuenteTextos;
-        text-align:center;
-    }  
-    .enviosPagos img{
-        margin: 2px;
-        display: none;
-        flex-wrap: wrap;
-    }
-    .enviosimg:hover {
-        transform: scale(1) translate(200px, 0px);
-        transition: 800ms;
-    }
-    .publicidadTable{
-        font-size: 15px;
-        margin-left: 45px;
-    }
-    .principal{
-        .consejosTit{
-            font-size: 30px;
-        }
-        div ol li {
-            font-size: 25px;
-            }
-        div ol h3{
-            font-size: 20px;
-        }
-        div ol p{
-            font-size: 22px;
-        }
-        .consejosUno{
-            border-radius: 30px;
-            margin: 5px;
-        }
-    }
-    .publicidad{
-        .curado{
-            font-size: 30px;
-        }
-        .curadoDos{
-            font-size:  25px;
-            p{
-                font-size: 22px;
-            }
-        }
-        .curadoTres{
-            width: 350px;
-            height: 200px;
-        }
-    }
-    .conteiner-fluid{
-        .login{
-            margin-left: 30px;
-        }
-        .formulario{
-            margin-left: 30px;
-        }
-        .enviosText{
-            margin-left: 15px;
-        }
-        .cuentaLista{
-            margin-left: 30px;
-        }
-    }
+  }
 }
-@media (max-width: 500px){
-    .tarjetas{
-        display: flex;
-        flex-direction: column;
-        align-self: center;
+@media (max-width: 500px) {
+  .tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  .tarjetas div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .enviosPagos img {
+    margin: 1px;
+    display: none;
+    flex-wrap: wrap;
+  }
+  .enviosimg:hover {
+    transform: scale(1) translate(125px, 0px);
+    transition: 800ms;
+  }
+  .conteiner-fluid {
+    justify-content: center;
+
+    .login {
+      width: 90%;
+      margin: 40px;
     }
-    .tarjetas div{
-        display: flex;
-        flex-wrap: wrap;
+    .formulario {
+      width: 90%;
+      margin: 40px;
     }
-    .enviosPagos img{
-        margin: 1px;
-        display: none;
-        flex-wrap: wrap;
+    .enviosText {
+      margin-left: 15px;
     }
-    .enviosimg:hover {
-        transform: scale(1) translate(125px, 0px);
-        transition: 800ms;
+    .cuentaLista {
+      margin-left: 30px;
     }
-    .conteiner-fluid{
-        justify-content: center;
-        
-        .login{
-            width: 90%;
-            margin: 40px;
-        }
-        .formulario{
-            width: 90%;
-            margin: 40px;
-        }
-        .enviosText{
-            margin-left: 15px;
-        }
-        .cuentaLista{
-            margin-left: 30px;
-        }
-    }
+  }
 }

@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consejos para tomar tu mate</title>
-    <meta name="description"
-        content="No tomés tu mate lavado y aprovechá nuestros consejos: la mejor yerba, el mejor mate, la mejor bombilla">
-    <link rel="shortcut icon" href="./activos/img/logomate2.jpg">
+    <!--título (distinto x pág), meta descripción (distinto x pag) para SEO y favicon-->
+    <title>MateStore.com.ar</title>
+    <meta name="description" content="Tu sitio en CABA para comprar tus mates, bombillas, termos, kits materos y más.">
+    <link rel="shortcut icon" href="./activos/img/logomate2.png">
+    <!--enlaces a GoogleFonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -18,17 +19,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <!--enlace FontAwesome para iconos-->
     <script src="https://kit.fontawesome.com/28d772f758.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <!--enlace Booststrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--hoja de estilo enlazada a SASS y hoja estilo Fontello.css para flotante Whatsapp-->
     <link rel="stylesheet" href="./activos/css/style.css">
+    <link rel="stylesheet" href="./activos/css/fontello.css">
 </head>
 
 <body class="conteiner-fluid">
 
+    <!--navbar hamburguer boostsrap con logo animado a index-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.html"><img src="./activos/img/logomate2.png"></a>
@@ -59,11 +70,16 @@
             </div>
         </div>
     </nav>
-
+    <!--header con título del sitio y foto fondo con profundidad-->
     <header class="d-flex justify-content-center text-center align-items-center">
         <h1>MATESTORE</h1>
     </header>
     <main class="principal">
+        <!--boton Whatsapp flotante-->
+        <a href="https://api.whatsapp.com/" class="btn-wsp" tarjet="_blank">
+            <i class="icon-whatsapp"><i>
+        </a>
+        <!--sección para preparación mate-->
         <h2 class="consejosTit">Consejos para preparar el mejor mate</h2>
         <div>
             <ol>
@@ -98,6 +114,7 @@
                 </h3>
             </ol><br>
         </div>
+        <!--imgs ilustrativas preparación mate-->
         <div class="consejosUno d-flex justify-content-evenly">
             <img class="consejosUno" src="./activos/img/consejos1.jpg" alt="vertir yerba">
             <img class="consejosUno" src="./activos/img/consejos2.jpg" alt="quitar polvo mate">
@@ -106,6 +123,7 @@
         </div>
         <hr>
     </main>
+    <!--sección curado del mate-->
     <aside class="publicidad">
         <h2 class="curado">Curando tu mate</h2>
         <ol class="curadoDos">
@@ -124,6 +142,7 @@
     </aside>
     <footer id="pie" class="justify-content-between align-items-center p-2">
         <section class="footerMain">
+            <!--recursos en footer más formulario newsletter-->
             <div class="footerItem">
                 <a id="pieInicio" href="./index.html">INICIO</a>
                 <a href="./micuenta.html">Pagos</a>
@@ -139,6 +158,7 @@
             </div>
         </section>
         <br>
+        <!--icos a enlaces de RRSS-->
         <section class="footerSocial">
             <a id="pieRedes"></a>
             <ul class="">
@@ -149,6 +169,7 @@
                 <li><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
             </ul>
         </section>
+        <!--términos, condiciones y copyright-->
         <section class="footerTerm">
             <ul>
                 <li><a href="#">Términos &amp; Condiciones</a></li>
@@ -157,6 +178,7 @@
             </ul>
         </section>
     </footer>
+    <!--enlaces JS Booststrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>

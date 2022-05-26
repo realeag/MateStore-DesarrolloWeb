@@ -8,19 +8,15 @@
 @import "_micuenta";
 @import "_botones";
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-.conteiner-fluid{
-    padding: 0;
-    overflow-x: hidden;
-    
+.conteiner-fluid {
+  padding: 0;
+  overflow-x: hidden;
 }
-body{
-    background: $colorFondo;
-    position: relative;
+body {
+  background: $colorFondo;
+  position: relative;
 }
-
-
-

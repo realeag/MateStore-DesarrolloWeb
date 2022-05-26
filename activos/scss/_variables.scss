@@ -1,11 +1,11 @@
-$colorFondo : #b0b478;
-$colorBarras : linear-gradient(to left, #325F07 0%, #62AC11 0%, #57652a 100%);
+$colorFondo: #b0b478;
+$colorBarras: linear-gradient(to left, #325f07 0%, #62ac11 0%, #57652a 100%);
 $fondoTarjetas: #668853;
 $fondoBoton: #7ca763;
-$fuenteTextos: 'Oswald', sans-serif;
+$fuenteTextos: "Oswald", sans-serif;
 $boton: (
-    ancho:100%,
-    bordes:none,
-    padd:12px,
-    radio:3px,
-)
+  ancho: 100%,
+  bordes: none,
+  padd: 12px,
+  radio: 3px,
+);

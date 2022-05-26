@@ -112,7 +112,7 @@
 
 /**estilos de NAVBAR y FOOTER**/
 .navbar {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   color: white;
 }
@@ -124,7 +124,7 @@
 }
 
 nav {
-  background: linear-gradient(to left, #325F07 0%, #62AC11 0%, #57652a 100%);
+  background: linear-gradient(to left, #325f07 0%, #62ac11 0%, #57652a 100%);
   display: flex;
   justify-content: space-between;
 }
@@ -191,7 +191,7 @@ header {
 }
 
 header h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bolder;
   font-style: italic;
   font-size: 64px;
@@ -199,8 +199,8 @@ header h1 {
 }
 
 footer {
-  font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(to left, #325F07 0%, #62AC11 0%, #57652a 100%);
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(to left, #325f07 0%, #62ac11 0%, #57652a 100%);
   width: auto;
   height: auto;
   box-sizing: border-box;
@@ -273,9 +273,29 @@ footer a:hover {
   white-space: nowrap;
 }
 
-.carousel-inner img {
-  margin: 0 auto;
-  margin-bottom: 100px;
+.btn-wsp {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 50px;
+  bottom: 30px;
+  right: 30px;
+  background: #0df053;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.btn-wsp:hover {
+  text-decoration: none;
+  color: #0df053;
+  background: #fff;
 }
 
 main {
@@ -333,6 +353,11 @@ carousel-item img {
 .listaProductos ul li a:hover {
   color: #31061b;
   text-decoration: underline;
+}
+
+.carousel-inner img {
+  margin: 0 auto;
+  margin-bottom: 100px;
 }
 
 .preguntas {

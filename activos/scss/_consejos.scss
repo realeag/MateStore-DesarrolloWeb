@@ -1,68 +1,68 @@
-.principal{
-    margin: 10%;
-    font-size: 24px;
-    .consejosTit{
-        font-family: $fuenteTextos;
-        font-size: 48px ;
-        text-decoration: underline;
-        padding: 25px;
-        margin: 25px;
-        text-align: center;
-        color: #2d5507;
-        font-weight: bolder;
-    }
-    div ol{
-        margin: 20px;
-    }
-    div ol li{
-        text-align: left;
-        font-size: 36px;
-        color:#630515;
-        font-weight: bolder;
-    }
-    div ol h3{
-        text-align: left;
-    }
-    div ol p{
-        font-size: 30px;
-        font-weight: bolder;
-        text-decoration: underline cadetblue;
-    }
+.principal {
+  margin: 10%;
+  font-size: 24px;
+  .consejosTit {
+    font-family: $fuenteTextos;
+    font-size: 48px;
+    text-decoration: underline;
+    padding: 25px;
+    margin: 25px;
+    text-align: center;
+    color: #2d5507;
+    font-weight: bolder;
+  }
+  div ol {
+    margin: 20px;
+  }
+  div ol li {
+    text-align: left;
+    font-size: 36px;
+    color: #630515;
+    font-weight: bolder;
+  }
+  div ol h3 {
+    text-align: left;
+  }
+  div ol p {
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: underline cadetblue;
+  }
 }
-.publicidad{
-    font-size: 24px;
-    margin: 10%;
-    .curado{
-        font-family: $fuenteTextos;
-        font-size: 48px ;
-        text-decoration: underline;
-        padding: 25px;
-        margin: 25px;
-        text-align: center;
-        color: #2d5507;
-        font-weight: bolder;    
+.publicidad {
+  font-size: 24px;
+  margin: 10%;
+  .curado {
+    font-family: $fuenteTextos;
+    font-size: 48px;
+    text-decoration: underline;
+    padding: 25px;
+    margin: 25px;
+    text-align: center;
+    color: #2d5507;
+    font-weight: bolder;
+  }
+  .curadoDos {
+    list-style: none;
+    font-family: $fuenteTextos;
+    font-size: 36px;
+    height: auto;
+    padding: 10px;
+    margin: 20px;
+    li {
+      font-weight: bolder;
+      display: flex;
     }
-    .curadoDos{
-        list-style: none;
-        font-family: $fuenteTextos;
-        font-size: 36px;
-        height: auto;
-        padding: 10px;
-        margin: 20px;
-        li {
-            font-weight: bolder;
-            display: flex;
-        }
-        p{
-            font-size: 30px;
-        }
+    p {
+      font-size: 30px;
     }
-    .curadoTres{
-        display: flex;
-        align-self: center;
-        padding: 10px;
-        width: 50%;
-        margin: 20px;
-        height: 300px;
-    }
+  }
+  .curadoTres {
+    display: flex;
+    align-self: center;
+    padding: 10px;
+    width: 50%;
+    margin: 20px;
+    height: 300px;
+  }
 }
