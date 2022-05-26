@@ -76,10 +76,12 @@
   footer {
     font-family: 'Montserrat', sans-serif;
     background: $colorBarras;
-    width: 100%;
+    width: auto;
     height: auto;
     box-sizing: border-box;
     color: antiquewhite;
+    line-height: 1.5;
+    align-self: flex-end;
   }
   footer a{
     text-decoration: none;
@@ -89,6 +91,51 @@
     color: white;
     text-decoration: underline;
   }
+  .footerMain{
+    display: flex;
+    width: 100%;
+    padding: 1.25rem 1.75rem;
+  }
+  .footerItem{
+    padding: 1.25rem;
+    min-width: 200px;
+    flex-direction: column;
+  }
+  .footerItem a{
+    display: flex;
+    margin-right: 35rem;
+  }
+  .footerSocial {
+    padding: 0 1.75rem 1.25rem;
+    ul{
+    list-style: none;
+    border-top: 1px rgb(17, 1, 1) solid;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    li{
+      margin: 0.5rem;
+      font-size: 1.25rem;
+    }
+  }
+}
+  .footerTerm {
+    padding: 25px;
+    margin: 1;
+    background-color: rgb(6, 59, 4);
+    height: 5rem;
+    ul{
+    width: 100%;
+    list-style: none;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    li{
+      padding: 5px;
+      white-space: nowrap;
+    }
+  }
+}
   .carousel-inner img {
 
     margin: 0 auto;

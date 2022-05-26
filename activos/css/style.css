@@ -201,10 +201,12 @@ header h1 {
 footer {
   font-family: 'Montserrat', sans-serif;
   background: linear-gradient(to left, #325F07 0%, #62AC11 0%, #57652a 100%);
-  width: 100%;
+  width: auto;
   height: auto;
   box-sizing: border-box;
   color: antiquewhite;
+  line-height: 1.5;
+  align-self: flex-end;
 }
 
 footer a {
@@ -215,6 +217,60 @@ footer a {
 footer a:hover {
   color: white;
   text-decoration: underline;
+}
+
+.footerMain {
+  display: flex;
+  width: 100%;
+  padding: 1.25rem 1.75rem;
+}
+
+.footerItem {
+  padding: 1.25rem;
+  min-width: 200px;
+  flex-direction: column;
+}
+
+.footerItem a {
+  display: flex;
+  margin-right: 35rem;
+}
+
+.footerSocial {
+  padding: 0 1.75rem 1.25rem;
+}
+
+.footerSocial ul {
+  list-style: none;
+  border-top: 1px #110101 solid;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.footerSocial ul li {
+  margin: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.footerTerm {
+  padding: 25px;
+  margin: 1;
+  background-color: #063b04;
+  height: 5rem;
+}
+
+.footerTerm ul {
+  width: 100%;
+  list-style: none;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+}
+
+.footerTerm ul li {
+  padding: 5px;
+  white-space: nowrap;
 }
 
 .carousel-inner img {
@@ -359,10 +415,12 @@ th {
   }
   footer {
     font-size: 10px;
-    height: 40px;
+    height: auto;
   }
-  footer img {
-    width: 15%;
+  .footerTerm {
+    display: flex;
+    justify-content: space-evenly;
+    height: 3rem;
   }
   .mainTit {
     font-size: 28px;
@@ -453,6 +511,44 @@ th {
   }
   .conteiner-fluid .formulario {
     margin-left: 30px;
+  }
+  .conteiner-fluid .enviosText {
+    margin-left: 15px;
+  }
+  .conteiner-fluid .cuentaLista {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  .tarjetas div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .enviosPagos img {
+    margin: 1px;
+    display: none;
+    flex-wrap: wrap;
+  }
+  .enviosimg:hover {
+    transform: scale(1) translate(125px, 0px);
+    transition: 800ms;
+  }
+  .conteiner-fluid {
+    justify-content: center;
+  }
+  .conteiner-fluid .login {
+    width: 90%;
+    margin: 40px;
+  }
+  .conteiner-fluid .formulario {
+    width: 90%;
+    margin: 40px;
   }
   .conteiner-fluid .enviosText {
     margin-left: 15px;

@@ -1,4 +1,5 @@
 @media (max-width: 768px){
+    
     .navbar{
         font-size: 18px;
         flex-direction: column;
@@ -13,10 +14,12 @@
     }
     footer{
         font-size: 10px;
-        height: 40px;
+        height: auto;
     }
-    footer img{
-        width:15%;
+    .footerTerm{
+        display: flex;
+        justify-content: space-evenly;
+        height: 3rem;
     }
     .mainTit{
         font-size: 28px;
@@ -112,6 +115,44 @@
         }
         .formulario{
             margin-left: 30px;
+        }
+        .enviosText{
+            margin-left: 15px;
+        }
+        .cuentaLista{
+            margin-left: 30px;
+        }
+    }
+}
+@media (max-width: 500px){
+    .tarjetas{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    .tarjetas div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .enviosPagos img{
+        margin: 1px;
+        display: none;
+        flex-wrap: wrap;
+    }
+    .enviosimg:hover {
+        transform: scale(1) translate(125px, 0px);
+        transition: 800ms;
+    }
+    .conteiner-fluid{
+        justify-content: center;
+        
+        .login{
+            width: 90%;
+            margin: 40px;
+        }
+        .formulario{
+            width: 90%;
+            margin: 40px;
         }
         .enviosText{
             margin-left: 15px;

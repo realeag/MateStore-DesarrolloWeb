@@ -129,16 +129,40 @@
         <!--advertencia-->
         <p class="advertencia">*Los valores pueden verse modificados sin previo aviso.</p>
     </aside>
-    <footer id="pie" class="d-flex text-align-center justify-content-between align-items-center p-2">
-        <a id="pieInicio" href="./index.html">INICIO</a>
-        <a href="./micuenta.html">Formas de Pago</a>
-        <a href="./micuenta.html">Contáctanos</a>
-        <a href="./micuenta.html">Ubicación</a>
+    <footer id="pie" class="justify-content-between align-items-center p-2">
+        <section class="footerMain">
+            <div class="footerItem">
+                <a id="pieInicio" href="./index.html">INICIO</a>
+                <a href="./micuenta.html">Pagos</a>
+                <a href="./micuenta.html">Contáctanos</a>
+                <a href="./micuenta.html">Ubicación</a>
+            </div>
+            <div class="footerItem">
+                <p>Suscribite a nuestro newsletter para las últimas novedades.</p>
+                <form>
+                    <input type="email" name="email" placeholder="Ingresá tu e-mail">
+                    <input type="submit" value="Suscribite">
+                </form>
+            </div>
+        </section>
         <br>
-        <a id="pieRedes">Seguínos en
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-        </a>
+        <section class="footerSocial">
+            <a id="pieRedes"></a>
+            <ul class="">
+                <li><i href="#" class="fa-brands fa-whatsapp"></i></li>
+                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </section>
+        <section class="footerTerm">
+            <ul>
+                <li><a href="#">Términos &amp; Condiciones</a></li>
+                <li><a href="#">Políticas de privacidad</a></li>
+                <li>&copy; 2022 Copyright MateStore SRL</li>
+            </ul>
+        </section>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
