@@ -256,7 +256,7 @@ footer a:hover {
 .footerTerm {
   padding: 25px;
   margin: 1;
-  background-color: #063b04;
+  background-color: #2d4b29;
   height: 5rem;
 }
 
@@ -695,7 +695,7 @@ th {
 }
 
 body {
-  background: linear-gradient(to right, #D7DAA5 0%, #A1A772 0%, #ab9353 100%);
+  background: #b0b478;
   position: relative;
 }
 /*# sourceMappingURL=style.css.map */
