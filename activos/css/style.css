@@ -320,6 +320,7 @@ main {
 
 .mainPagos {
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .mainPagos ol li {
@@ -334,6 +335,7 @@ main {
   box-sizing: border-box;
   font-weight: bolder;
   padding: 30px;
+  margin: 0;
   margin-bottom: 50px;
 }
 
@@ -363,23 +365,20 @@ carousel-item img {
   align-items: center;
   font-weight: bolder;
   width: 100%;
-  margin: 20px;
-  height: 90px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: auto;
 }
 
-.listaProductos ul li a {
-  border: none;
-  border-radius: 3px;
-  padding: 12px;
-  border: 2px solid #575a58;
-  background-color: #4f8a58;
-  text-decoration: none;
-  color: antiquewhite;
+.listaProductos ul li a img {
+  width: 320px;
+  height: 320px;
+  cursor: pointer;
 }
 
-.listaProductos ul li a:hover {
+.listaProductos ul li img:hover {
   color: #31061b;
-  text-decoration: underline;
+  transition: all 0.8s ease;
 }
 
 .preguntas {
@@ -404,7 +403,7 @@ table {
   overflow-y: hidden;
   font-size: 16px;
   box-shadow: 3px 5px 5px black;
-  margin-left: 250px;
+  margin-left: 150px;
 }
 
 th,
@@ -567,7 +566,7 @@ th {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 502px) {
   .tarjetas {
     display: flex;
     flex-direction: column;
@@ -603,6 +602,23 @@ th {
   .conteiner-fluid .cuentaLista {
     margin-left: 30px;
   }
+  .mainYT {
+    height: auto;
+    margin: 0;
+  }
+  .mainYT iframe {
+    width: 380px;
+    padding: 30px;
+  }
+  .mainYT div {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+.conteiner-fluid {
+  padding: 0;
+  overflow-x: hidden;
 }
 
 .cuentaLista {
