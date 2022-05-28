@@ -16,12 +16,15 @@
 .conteiner-fluid {
   padding: 0;
   margin: 0;  
+  overflow-x: hidden;
 }
 .conteiner{
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 body {
   background: $colorFondo;
   position: relative;
+  overflow-y: hidden;
 }

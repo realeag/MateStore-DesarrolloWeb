@@ -9,11 +9,12 @@
   /**no encontré forma de hacer funcionar SPACEBETWEEN en boostrap y apliqué margins**/
   margin-right: 75px;
   margin-left: 75px;
+  align-self:center;
 }
 nav {
   background: $colorBarras;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .navbar-brand:hover {
   color: white;
@@ -23,12 +24,12 @@ nav {
   height: 60px;
 }
 nav div a img:hover {
-  transform: scale(1.1);
+  transform: scale(0.9);
   transition: all 500ms;
 }
 .lateral {
   display: flex;
-  align-items: flex-end;
+  align-self:center;
 }
 .lateral__1 {
   color: white;
@@ -43,17 +44,17 @@ nav div a img:hover {
   padding: 5px;
 }
 .lateral__1:hover {
-  transform: scale(1.2);
+  transform: scale(0.9);
   transition: all 500ms;
   color: white;
 }
 .lateral__2:hover {
-  transform: scale(1.2);
+  transform: scale(0.9);
   transition: all 500ms;
   color: white;
 }
 .lateral__3:hover {
-  transform: scale(1.2);
+  transform: scale(0.9);
   transition: all 500ms;
   color: white;
 }

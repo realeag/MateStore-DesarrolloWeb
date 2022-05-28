@@ -132,12 +132,13 @@
   /**no encontré forma de hacer funcionar SPACEBETWEEN en boostrap y apliqué margins**/
   margin-right: 75px;
   margin-left: 75px;
+  align-self: center;
 }
 
 nav {
   background: linear-gradient(to left, #325f07 0%, #62ac11 0%, #57652a 100%);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .navbar-brand:hover {
@@ -150,13 +151,13 @@ nav {
 }
 
 nav div a img:hover {
-  transform: scale(1.1);
+  transform: scale(0.9);
   transition: all 500ms;
 }
 
 .lateral {
   display: flex;
-  align-items: flex-end;
+  align-self: center;
 }
 
 .lateral__1 {
@@ -175,19 +176,19 @@ nav div a img:hover {
 }
 
 .lateral__1:hover {
-  transform: scale(1.2);
+  transform: scale(0.9);
   transition: all 500ms;
   color: white;
 }
 
 .lateral__2:hover {
-  transform: scale(1.2);
+  transform: scale(0.9);
   transition: all 500ms;
   color: white;
 }
 
 .lateral__3:hover {
-  transform: scale(1.2);
+  transform: scale(0.9);
   transition: all 500ms;
   color: white;
 }
@@ -346,7 +347,7 @@ main {
   background-color: #b0b478;
   box-sizing: border-box;
   font-weight: bolder;
-  padding: 0;
+  padding: 10px;
   margin: 0;
   margin-bottom: 50px;
   width: 100%;
@@ -793,6 +794,10 @@ th {
     padding: 0;
     margin-left: 30px;
   }
+  footer {
+    font-size: 10px;
+    height: auto;
+  }
   .footerMain {
     justify-content: space-between;
   }
@@ -801,6 +806,16 @@ th {
   }
   .footerItem a {
     margin: 0;
+  }
+  .footerTerm {
+    font-size: 8px;
+    padding: 5px;
+    margin: 0;
+  }
+  .footerTerm ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
   }
   .conteiner {
     margin: 0;
@@ -855,6 +870,63 @@ th {
   }
   .navbar .nav-item {
     margin: 0px;
+  }
+  .lateral {
+    margin-top: 20px;
+    align-self: center;
+  }
+  footer {
+    font-size: 10px;
+    height: auto;
+  }
+  .footerTerm {
+    display: flex;
+    justify-content: space-evenly;
+    height: 3rem;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+  }
+  .footerTerm ul {
+    align-items: center;
+    padding: 0;
+  }
+  .footerTerm li {
+    padding: 0;
+  }
+  .footerMain {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    margin: 0px;
+    align-content: initial;
+  }
+  .footerItem {
+    margin: 0;
+  }
+  .footerItem a {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1300px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .navbar {
+    max-width: 100%;
+    font-size: 18px;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 18px;
+  }
+  .navbar .nav-item {
+    /**no encontré forma de hacer funcionar SPACEBETWEEN en boostrap y apliqué margins**/
+    margin-right: 60px;
+    margin-left: 60px;
+    align-self: center;
   }
   .lateral {
     margin-top: 20px;
@@ -1032,15 +1104,18 @@ th {
 .conteiner-fluid {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .conteiner {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
   background: white;
   position: relative;
+  overflow-y: hidden;
 }
 /*# sourceMappingURL=style.css.map */
