@@ -503,6 +503,10 @@ th {
 }
 
 @media (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
   .navbar {
     font-size: 18px;
     flex-direction: column;
@@ -636,6 +640,10 @@ th {
 }
 
 @media (max-width: 502px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
   .tarjetas {
     display: flex;
     flex-direction: column;
