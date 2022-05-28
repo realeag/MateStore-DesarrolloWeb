@@ -5,7 +5,7 @@
   margin: 50px;
 }
 .login {
-  width: 400px;
+  max-width: 40%;
   padding: 40px;
   background-color: $fondoTarjetas;
   margin: 50px;
@@ -19,6 +19,7 @@
 .loginTitulo {
   font-size: 22px;
   margin-bottom: 20px;
+  
 }
 
 .entradas {
@@ -30,6 +31,7 @@
   font-size: 16px;
   display: flex;
   align-self: auto;
+  justify-content: center;
 }
 .login a {
   color: white;
@@ -41,6 +43,7 @@
 }
 
 .formulario {
+  max-width: 34%;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   width: auto;

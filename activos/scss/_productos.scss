@@ -2,20 +2,22 @@
   font-family: $fuenteTextos;
   font-size: 16px;
   background-color: none;
-  padding: 20px;
-  margin: 20px;
+  padding: 10px;
+  margin-left: 15px;
   display: flex;
   flex-wrap: wrap;
   position: relative;
   color: black;
   font-weight: bolder;
   position: relative;
+  justify-self: center;
   justify-content: center;
   overflow: hidden;
+  width: 30%;
 }
 .prod:hover {
   transform: scale(0.95);
-  transition: all 500ms;
+  transition: all 500ms ease-in-out;
   opacity: 0.7;
 }
 .prod h3 {
@@ -28,3 +30,8 @@
   border-radius: 10px;
   cursor: pointer;
 }
+.tarjetas{
+  padding: 0;
+  align-items: center;
+}
+

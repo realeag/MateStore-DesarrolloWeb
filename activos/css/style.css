@@ -3,21 +3,23 @@
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   background-color: none;
-  padding: 20px;
-  margin: 20px;
+  padding: 10px;
+  margin-left: 15px;
   display: flex;
   flex-wrap: wrap;
   position: relative;
   color: black;
   font-weight: bolder;
   position: relative;
+  justify-self: center;
   justify-content: center;
   overflow: hidden;
+  width: 30%;
 }
 
 .prod:hover {
   transform: scale(0.95);
-  transition: all 500ms;
+  transition: all 500ms ease-in-out;
   opacity: 0.7;
 }
 
@@ -33,8 +35,13 @@
   cursor: pointer;
 }
 
+.tarjetas {
+  padding: 0;
+  align-items: center;
+}
+
 .principal {
-  margin: 10%;
+  margin: 0;
   font-size: 24px;
 }
 
@@ -44,6 +51,7 @@
   text-decoration: underline;
   padding: 25px;
   margin: 25px;
+  margin-top: 50px;
   text-align: center;
   color: #2d5507;
   font-weight: bolder;
@@ -305,6 +313,7 @@ main {
   font-family: "Oswald", sans-serif;
   text-decoration: solid 48px;
   text-align: center;
+  width: 100%;
 }
 
 .mainTit {
@@ -337,9 +346,10 @@ main {
   background-color: #b0b478;
   box-sizing: border-box;
   font-weight: bolder;
-  padding: 30px;
+  padding: 0;
   margin: 0;
   margin-bottom: 50px;
+  width: 100%;
 }
 
 carousel-item img {
@@ -362,8 +372,9 @@ carousel-item img {
 
 .listaProductos {
   position: relative;
-  display: flex;
   padding: 10px 25px 10px 140px;
+  display: flex;
+  width: 100%;
 }
 
 .listaProductos div img {
@@ -375,11 +386,12 @@ carousel-item img {
   font-family: "Montserrat", sans-serif;
   align-items: center;
   font-weight: bolder;
-  width: 80px;
+  width: 90px;
   background-color: #325f07;
   color: white;
   text-decoration: none;
-  border: 2px solid #325f07;
+  border: 2px solid white;
+  border-radius: 4px;
   position: absolute;
   margin: 13em 0 1em 7em;
   z-index: 1;
@@ -392,10 +404,10 @@ carousel-item img {
 .listaProductos .listaProd__Mate img {
   background-image: url(../img/indexmate.jpg);
   color: black;
-  justify-content: center;
   width: 320px;
   height: 320px;
   border-radius: 3px;
+  overflow: hidden;
 }
 
 .listaProductos .listaProd__Mate img:hover {
@@ -408,10 +420,10 @@ carousel-item img {
 .listaProductos .listaProd__Bombilla img {
   background-image: url(../img/indexbombilla.jpg);
   color: black;
-  justify-content: center;
   width: 320px;
   height: 320px;
   border-radius: 3px;
+  overflow: hidden;
 }
 
 .listaProductos .listaProd__Bombilla img:hover {
@@ -424,10 +436,10 @@ carousel-item img {
 .listaProductos .listaProd__Termo img {
   background-image: url(../img/indextermo.jpg);
   color: black;
-  justify-content: center;
   width: 320px;
   height: 320px;
   border-radius: 3px;
+  overflow: hidden;
 }
 
 .listaProductos .listaProd__Termo img:hover {
@@ -437,10 +449,21 @@ carousel-item img {
   filter: grayscale(80%);
 }
 
+.principalShip {
+  margin: 0;
+}
+
 .preguntas {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 70px;
   list-style: none;
+  max-width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.publicidadShip {
+  margin: 0;
 }
 
 table {
@@ -502,7 +525,7 @@ th {
   font-weight: bolder;
 }
 
-@media (max-width: 768px) {
+@media only screen and (min-width: 502px) and (max-width: 768px) {
   * {
     margin: 0;
     padding: 0;
@@ -510,6 +533,7 @@ th {
   .conteiner {
     margin: 0;
     padding: 0;
+    width: 100%;
   }
   .navbar {
     font-size: 18px;
@@ -531,6 +555,29 @@ th {
     display: flex;
     justify-content: space-evenly;
     height: 3rem;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+  }
+  .footerTerm ul {
+    align-items: center;
+    padding: 0;
+  }
+  .footerTerm li {
+    padding: 0;
+  }
+  .footerMain {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0px;
+    align-content: initial;
+  }
+  .footerItem {
+    margin: 0;
+  }
+  .footerItem a {
+    margin: 0;
   }
   .mainTit {
     font-size: 28px;
@@ -550,16 +597,15 @@ th {
     display: flex;
     flex-direction: column;
     align-self: center;
+    justify-content: center;
   }
   .tarjetas div {
-    display: flex;
-    flex-wrap: wrap;
+    width: 90%;
+    max-width: 350px;
+    flex-direction: column;
   }
   .cuentaLista {
     text-align: center;
-  }
-  .formulario {
-    width: auto;
   }
   .enviosText {
     margin: 20px;
@@ -579,13 +625,27 @@ th {
     display: none;
     flex-wrap: wrap;
   }
-  .enviosimg:hover {
-    transform: scale(1) translate(200px, 0px);
+  .principalShip {
+    margin: 0;
+  }
+  .principalShip .preguntas {
+    max-width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .publicidadShip {
+    margin: 0;
+    padding: 0;
+  }
+  .publicidadShip .enviosimg:hover {
+    transform: scale(1) translate(400px, 0px);
     transition: 800ms;
   }
-  .publicidadTable {
+  .publicidadShip .publicidadTable {
     font-size: 15px;
-    margin-left: 45px;
+    margin-left: 25%;
+    margin-right: 0;
+    max-width: 100%;
   }
   .principal .consejosTit {
     font-size: 30px;
@@ -622,9 +682,13 @@ th {
   }
   .conteiner-fluid .login {
     margin-left: 30px;
+    max-width: 90%;
+    font-size: 16px;
   }
   .conteiner-fluid .formulario {
     margin-left: 30px;
+    max-width: 90%;
+    font-size: 16px;
   }
   .conteiner-fluid .enviosText {
     margin-left: 15px;
@@ -642,24 +706,44 @@ th {
     flex-wrap: wrap;
     align-self: center;
     padding: 0;
-    margin-left: 30px;
+    margin-left: 0;
     text-align: center;
+  }
+  header h1 {
+    font-size: 40px;
   }
 }
 
-@media (min-width: 502px) {
+@media only screen and (min-width: 320px) and (max-width: 502px) {
   * {
     margin: 100%;
     padding: 100%;
+  }
+  .navbar {
+    font-size: 18px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar .nav-item {
+    margin: 0px;
+  }
+  .lateral {
+    margin-top: 20px;
+    align-self: center;
+  }
+  header h1 {
+    font-size: 48px;
   }
   .tarjetas {
     display: flex;
     flex-direction: column;
     align-self: center;
+    justify-content: center;
   }
   .tarjetas div {
-    display: flex;
-    flex-wrap: wrap;
+    width: 90%;
+    max-width: 350px;
+    flex-direction: column;
   }
   .enviosPagos img {
     margin: 1px;
@@ -678,6 +762,7 @@ th {
     margin: 40px;
   }
   .conteiner-fluid .formulario {
+    justify-content: center;
     width: 90%;
     margin: 40px;
   }
@@ -690,6 +775,9 @@ th {
   .mainYT {
     height: auto;
     margin: 0;
+    align-self: center;
+    padding: 0;
+    justify-content: center;
   }
   .mainYT iframe {
     width: 380px;
@@ -705,20 +793,105 @@ th {
     padding: 0;
     margin-left: 30px;
   }
-  .mainYT {
-    flex-direction: column;
-    align-self: center;
-    padding: 0;
-    margin-left: 0px;
+  .footerMain {
+    justify-content: space-between;
+  }
+  .footerItem {
+    margin: 0;
+  }
+  .footerItem a {
+    margin: 0;
   }
   .conteiner {
     margin: 0;
     padding: 0;
+    width: 100%;
   }
   .conteiner-fluid {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+  }
+  .principalShip {
+    margin: 0;
+  }
+  .principalShip .preguntas {
+    max-width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .publicidadShip {
+    margin: 0;
+    padding: 0;
+  }
+  .publicidadShip .enviosimg:hover {
+    transform: scale(1) translate(100px, 0px);
+    transition: 800ms;
+  }
+  .publicidadShip .publicidadTable {
+    font-size: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 100%;
+  }
+  .principal .consejosUno {
+    border-radius: 30px;
+    margin: 5px;
+  }
+  .publicidad .curadoTres {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  * {
+    margin: 100%;
+    padding: 100%;
+  }
+  .navbar {
+    font-size: 18px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar .nav-item {
+    margin: 0px;
+  }
+  .lateral {
+    margin-top: 20px;
+    align-self: center;
+  }
+  footer {
+    font-size: 10px;
+    height: auto;
+  }
+  .footerTerm {
+    display: flex;
+    justify-content: space-evenly;
+    height: 3rem;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+  }
+  .footerTerm ul {
+    align-items: center;
+    padding: 0;
+  }
+  .footerTerm li {
+    padding: 0;
+  }
+  .footerMain {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    margin: 0px;
+    align-content: initial;
+  }
+  .footerItem {
+    margin: 0;
+  }
+  .footerItem a {
+    margin: 0;
   }
 }
 
@@ -730,7 +903,7 @@ th {
 }
 
 .login {
-  width: 400px;
+  max-width: 40%;
   padding: 40px;
   background-color: #668853;
   margin: 50px;
@@ -756,6 +929,7 @@ th {
   font-size: 16px;
   display: flex;
   align-self: auto;
+  justify-content: center;
 }
 
 .login a {
@@ -769,6 +943,7 @@ th {
 }
 
 .formulario {
+  max-width: 34%;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   width: auto;

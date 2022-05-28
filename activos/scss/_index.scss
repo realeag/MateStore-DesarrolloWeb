@@ -2,6 +2,7 @@ main {
   font-family: "Oswald", sans-serif;
   text-decoration: solid 48px;
   text-align: center;
+  width: 100%;
 }
 .mainTit {
   font-size: 48px;
@@ -29,9 +30,10 @@ main {
   background-color: #b0b478;
   box-sizing: border-box;
   font-weight: bolder;
-  padding: 30px;
+  padding: 0;
   margin: 0;
   margin-bottom: 50px;
+  width: 100%;
 }
 carousel-item img {
   width: 100px;
@@ -49,8 +51,9 @@ carousel-item img {
 }
 .listaProductos{
   position: relative;
-  display: flex;
   padding: 10px 25px 10px 140px;
+  display: flex;
+  width: 100%;
 }
 .listaProductos div img{
   margin: 25px;
@@ -60,11 +63,12 @@ carousel-item img {
   font-family: "Montserrat", sans-serif;
   align-items: center;
   font-weight: bolder;
-  width: 80px;
+  width: 90px;
   background-color: rgb(50,95,7);
   color: white;
   text-decoration: none;
-  border: 2px solid rgb(50,95,7);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 4px;
   position: absolute;
   margin: 13em 0 1em 7em;
   z-index: 1;
@@ -75,10 +79,10 @@ carousel-item img {
 .listaProductos .listaProd__Mate img{
   background-image: url(../img/indexmate.jpg);
   color: black;
-  justify-content: center;
   width: 320px;
   height: 320px;
   border-radius: 3px;
+  overflow: hidden;
 }
 .listaProductos .listaProd__Mate img:hover {
   cursor: pointer;
@@ -89,10 +93,10 @@ carousel-item img {
 .listaProductos .listaProd__Bombilla img {
   background-image: url(../img/indexbombilla.jpg);
   color: black;
-  justify-content: center;
   width: 320px;
   height: 320px;
   border-radius: 3px;
+  overflow: hidden;
 }
 .listaProductos .listaProd__Bombilla img:hover {
   cursor: pointer;
@@ -103,10 +107,10 @@ carousel-item img {
 .listaProductos .listaProd__Termo img {
   background-image: url(../img/indextermo.jpg);
   color: black;
-  justify-content: center;
   width: 320px;
   height: 320px;
   border-radius: 3px;
+  overflow: hidden;
 }
 .listaProductos .listaProd__Termo img:hover {
   cursor: pointer;

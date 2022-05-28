@@ -2,11 +2,20 @@
   border: $borde;
   padding: $pad;
 }
+.principalShip{
+  margin: 0;
+}
 .preguntas {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 70px;
   list-style: none;
-}
+  max-width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+  }
+  .publicidadShip{
+    margin: 0;
+  }
 table {
   @include contenedor(100px, none);
   width: 100%;

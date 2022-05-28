@@ -1,11 +1,12 @@
-@media (max-width: 768px) {
+@media only screen and (min-width: 502px) and (max-width: 768px) {
   * {
     margin: 0;
     padding: 0;
   }
-  .conteiner{
+  .conteiner {
     margin: 0;
     padding: 0;
+    width: 100%;
   }
   .navbar {
     font-size: 18px;
@@ -27,6 +28,29 @@
     display: flex;
     justify-content: space-evenly;
     height: 3rem;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    ul {
+      align-items: center;
+      padding: 0;
+    }
+    li {
+      padding: 0;
+    }
+  }
+  .footerMain {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0px;
+    align-content: initial;
+  }
+  .footerItem {
+    margin: 0;
+    a {
+      margin: 0;
+    }
   }
   .mainTit {
     font-size: 28px;
@@ -46,16 +70,15 @@
     display: flex;
     flex-direction: column;
     align-self: center;
-  }
-  .tarjetas div {
-    display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    div {
+      width: 90%;
+      max-width: 350px;
+      flex-direction: column;
+    }
   }
   .cuentaLista {
     text-align: center;
-  }
-  .formulario {
-    width: auto;
   }
   .enviosText {
     margin: 20px;
@@ -75,14 +98,28 @@
     display: none;
     flex-wrap: wrap;
   }
+  .principalShip{
+    margin: 0;
+.preguntas{
+  max-width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+}
+.publicidadShip {
+  margin: 0;
+  padding: 0;
   .enviosimg:hover {
-    transform: scale(1) translate(200px, 0px);
+    transform: scale(1) translate(400px, 0px);
     transition: 800ms;
   }
   .publicidadTable {
     font-size: 15px;
-    margin-left: 45px;
+    margin-left: 25%;
+    margin-right: 0;
+    max-width: 100%;
   }
+} 
   .principal {
     .consejosTit {
       font-size: 30px;
@@ -121,9 +158,13 @@
     padding: 0;
     .login {
       margin-left: 30px;
+      max-width: 90%;
+      font-size: 16px;
     }
     .formulario {
       margin-left: 30px;
+      max-width: 90%;
+      font-size: 16px;
     }
     .enviosText {
       margin-left: 15px;
@@ -132,34 +173,53 @@
       margin-left: 30px;
     }
   }
-  .listaProductos{
+  .listaProductos {
     flex-direction: column;
     align-self: center;
     padding: 0;
     margin-left: 30px;
   }
-  .mainYT{
+  .mainYT {
     flex-wrap: wrap;
     align-self: center;
     padding: 0;
-    margin-left: 30px;
+    margin-left: 0;
     text-align: center;
   }
+  header h1 {
+    font-size: 40px;
+  }
 }
-@media (min-width: 502px) {
+@media only screen and (min-width: 320px) and (max-width: 502px) {
   * {
     margin: 100%;
     padding: 100%;
-
+  }
+  .navbar {
+    font-size: 18px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar .nav-item {
+    margin: 0px;
+  }
+  .lateral {
+    margin-top: 20px;
+    align-self: center;
+  }
+  header h1 {
+    font-size: 48px;
   }
   .tarjetas {
     display: flex;
     flex-direction: column;
     align-self: center;
-  }
-  .tarjetas div {
-    display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    div {
+      width: 90%;
+      max-width: 350px;
+      flex-direction: column;
+    }
   }
   .enviosPagos img {
     margin: 1px;
@@ -178,6 +238,7 @@
       margin: 40px;
     }
     .formulario {
+      justify-content: center;
       width: 90%;
       margin: 40px;
     }
@@ -188,37 +249,128 @@
       margin-left: 30px;
     }
   }
-  .mainYT{
+  .mainYT {
     height: auto;
-    margin: 0 ;
-    iframe{
+    margin: 0;
+    align-self: center;
+    padding: 0;
+    justify-content: center;
+    iframe {
       width: 380px;
       padding: 30px;
     }
-    div{
+    div {
       margin-top: 20px;
       text-align: center;
     }
   }
-  .listaProductos{
+  .listaProductos {
     flex-direction: column;
     align-self: center;
     padding: 0;
     margin-left: 30px;
   }
-  .mainYT {
-    flex-direction: column;
-    align-self: center;
+  .footerMain {
+    justify-content: space-between;
+  }
+  .footerItem {
+    margin: 0;
+    a {
+      margin: 0;
+    }
+  }
+  .conteiner {
+    margin: 0;
     padding: 0;
-    margin-left: 0px;
+    width: 100%;
+  }
+  .conteiner-fluid {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  .principalShip{
+    margin: 0;
+.preguntas{
+  max-width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
-.conteiner{
+}
+.publicidadShip {
   margin: 0;
   padding: 0;
+  .enviosimg:hover {
+    transform: scale(1) translate(100px, 0px);
+    transition: 800ms;
+  }
+  .publicidadTable {
+    font-size: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 100%;
+  }
+} 
+.principal{
+  .consejosUno {
+    border-radius: 30px;
+    margin: 5px;
+  }
 }
-.conteiner-fluid {
-  padding: 0;
-  margin: 0;
-  overflow-x: hidden;
+.publicidad{
+  .curadoTres{
+    width: 100%;
+  }
 }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  * {
+    margin: 100%;
+    padding: 100%;
+  }
+  .navbar {
+    font-size: 18px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar .nav-item {
+    margin: 0px;
+  }
+  .lateral {
+    margin-top: 20px;
+    align-self: center;
+  }
+  footer {
+    font-size: 10px;
+    height: auto;
+  }
+  .footerTerm {
+    display: flex;
+    justify-content: space-evenly;
+    height: 3rem;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    ul {
+      align-items: center;
+      padding: 0;
+    }
+    li {
+      padding: 0;
+    }
+  }
+  .footerMain {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    margin: 0px;
+    align-content: initial;
+  }
+  .footerItem {
+    margin: 0;
+    a {
+      margin: 0;
+    }
+  }
 }
