@@ -14,14 +14,17 @@
   overflow: hidden;
 }
 .prod:hover {
-  transform: scale(0.9);
+  transform: scale(0.95);
   transition: all 500ms;
+  opacity: 0.7;
 }
 .prod h3 {
   position: inherit;
 }
 .prod img {
+  transition: transform .2s;
   width: 300px;
   height: 335px;
   border-radius: 10px;
+  cursor: pointer;
 }

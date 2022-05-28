@@ -16,6 +16,7 @@
 2. CSS/SASS
 3. Git/Git BASH
 4. Github
+5. SEO
 
 ## Librerías y scripts
 

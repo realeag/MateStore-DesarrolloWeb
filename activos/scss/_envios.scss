@@ -12,7 +12,7 @@ table {
   width: 100%;
   font-family: "Oswald", sans-serif;
   border-collapse: collapse;
-  background-color: white;
+  background-color: rgb(214, 79, 79);
   border-radius: 6px;
   margin: 20px 20px 20px 40px;
   display: block;
@@ -31,7 +31,7 @@ td {
 }
 
 th {
-  background-color: tomato;
+  background-color: rgb(160, 24, 0);
   color: whitesmoke;
   text-align: left;
 }
@@ -54,7 +54,7 @@ th {
   margin-top: 10px;
   padding: 10px;
   font-size: 24px;
-  color: whitesmoke;
+  color: rgb(0, 0, 0);
   font-style: oblique;
   font-weight: bolder;
 }

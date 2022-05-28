@@ -8,8 +8,7 @@ main {
   text-decoration: underline;
   padding: 25px;
   margin: 25px;
-  color: #2d5507;
-  font-weight: bolder;
+  color: #0b1403;
 }
 .mainPromo {
   font-size: 32px;
@@ -26,7 +25,7 @@ main {
   }
 }
 .mainYT {
-  background-color: white;
+  background-color: #b0b478;
   box-sizing: border-box;
   font-weight: bolder;
   padding: 30px;
@@ -47,24 +46,69 @@ carousel-item img {
 .carusel3 {
   margin-bottom: 64px;
 }
-.listaProductos ul {
-  list-style: none;
-  font-size: 24px;
+.listaProductos{
+  position: relative;
   display: flex;
-  justify-content: space-evenly;
+  padding: 10% 10% 0 10%;
+}
+.listaProductos div img{
+  margin: 25px;
+}
+.listaProductos div a{
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
   align-items: center;
   font-weight: bolder;
-  width: 100%;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  height: auto;
+  width: 80px;
+  background-color: rgb(50,95,7);
+  color: white;
+  text-decoration: none;
+  border: 2px solid rgb(50,95,7);
+  position: absolute;
+  margin: 13em 0 1em 7em;
 }
-.listaProductos ul li a img{
+.listaProductos a:hover{
+  color: white;
+}
+.listaProductos .listaProd__Mate img{
+  background-image: url(../img/indexmate.jpg);
+  color: black;
+  justify-content: center;
   width: 320px;
   height: 320px;
-  cursor: pointer;
+  border-radius: 3px;
 }
-.listaProductos ul li img:hover {
-  color: #31061b;
-  transition: all 0.8s ease;
+.listaProductos .listaProd__Mate img:hover {
+  cursor: pointer;
+  transform:scale(0.98);
+  transition:all .5s ease-in-out;
+  filter: grayscale(80%);
+}
+.listaProductos .listaProd__Bombilla img {
+  background-image: url(../img/indexbombilla.jpg);
+  color: black;
+  justify-content: center;
+  width: 320px;
+  height: 320px;
+  border-radius: 3px;
+}
+.listaProductos .listaProd__Bombilla img:hover {
+  cursor: pointer;
+  transform:scale(0.98);
+  transition:all .5s ease-in-out;
+  filter: grayscale(80%);
+}
+.listaProductos .listaProd__Termo img {
+  background-image: url(../img/indextermo.jpg);
+  color: black;
+  justify-content: center;
+  width: 320px;
+  height: 320px;
+  border-radius: 3px;
+}
+.listaProductos .listaProd__Termo img:hover {
+  cursor: pointer;
+  transform:scale(0.98);
+  transition:all .5s ease-in-out;
+  filter: grayscale(80%);
 }
