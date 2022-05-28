@@ -122,6 +122,19 @@
       margin-left: 30px;
     }
   }
+  .listaProductos{
+    flex-direction: column;
+    align-self: center;
+    padding: 0;
+    margin-left: 30px;
+  }
+  .mainYT{
+    flex-wrap: wrap;
+    align-self: center;
+    padding: 0;
+    margin-left: 30px;
+    text-align: center;
+  }
 }
 @media (max-width: 502px) {
   .tarjetas {
@@ -172,9 +185,20 @@
       text-align: center;
     }
   }
+  .listaProductos{
+    flex-direction: column;
+    align-self: center;
+    padding: 0;
+    margin-left: 30px;
+  }
+  .mainYT {
+    flex-direction: column;
+    align-self: center;
+    padding: 0;
+    margin-left: 0px;
 }
 .conteiner-fluid {
   padding: 0;
   overflow-x: hidden;
 }
-
+}

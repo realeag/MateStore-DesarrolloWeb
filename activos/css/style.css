@@ -318,6 +318,7 @@ main {
 .mainPromo {
   font-size: 32px;
   text-align: left;
+  font-weight: bolder;
 }
 
 .mainPagos {
@@ -362,7 +363,7 @@ carousel-item img {
 .listaProductos {
   position: relative;
   display: flex;
-  padding: 10% 10% 0 10%;
+  padding: 10px 25px 10px 140px;
 }
 
 .listaProductos div img {
@@ -381,6 +382,7 @@ carousel-item img {
   border: 2px solid #325f07;
   position: absolute;
   margin: 13em 0 1em 7em;
+  z-index: 1;
 }
 
 .listaProductos a:hover {
@@ -399,7 +401,7 @@ carousel-item img {
 .listaProductos .listaProd__Mate img:hover {
   cursor: pointer;
   transform: scale(0.98);
-  transition: all .5s ease-in-out;
+  transition: all .8s ease-in-out;
   filter: grayscale(80%);
 }
 
@@ -415,7 +417,7 @@ carousel-item img {
 .listaProductos .listaProd__Bombilla img:hover {
   cursor: pointer;
   transform: scale(0.98);
-  transition: all .5s ease-in-out;
+  transition: all .8s ease-in-out;
   filter: grayscale(80%);
 }
 
@@ -431,7 +433,7 @@ carousel-item img {
 .listaProductos .listaProd__Termo img:hover {
   cursor: pointer;
   transform: scale(0.98);
-  transition: all .5s ease-in-out;
+  transition: all .8s ease-in-out;
   filter: grayscale(80%);
 }
 
@@ -618,6 +620,19 @@ th {
   .conteiner-fluid .cuentaLista {
     margin-left: 30px;
   }
+  .listaProductos {
+    flex-direction: column;
+    align-self: center;
+    padding: 0;
+    margin-left: 30px;
+  }
+  .mainYT {
+    flex-wrap: wrap;
+    align-self: center;
+    padding: 0;
+    margin-left: 30px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 502px) {
@@ -668,11 +683,22 @@ th {
     margin-top: 20px;
     text-align: center;
   }
-}
-
-.conteiner-fluid {
-  padding: 0;
-  overflow-x: hidden;
+  .listaProductos {
+    flex-direction: column;
+    align-self: center;
+    padding: 0;
+    margin-left: 30px;
+  }
+  .mainYT {
+    flex-direction: column;
+    align-self: center;
+    padding: 0;
+    margin-left: 0px;
+  }
+  .conteiner-fluid {
+    padding: 0;
+    overflow-x: hidden;
+  }
 }
 
 .cuentaLista {
@@ -725,8 +751,8 @@ th {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   width: auto;
-  height: 670px;
-  background-color: white;
+  height: auto;
+  background-color: #c0baba;
   border-radius: 4px;
   padding: 40px;
   margin: 50px;
@@ -739,7 +765,7 @@ th {
 
 .enviosText {
   font-size: 24px;
-  color: whitesmoke;
+  color: #070707;
   font-style: oblique;
   font-weight: bolder;
   margin: 20px;
@@ -798,7 +824,7 @@ th {
   height: auto;
   font-size: 24px;
   background: none;
-  background-color: #bbb7b7;
+  background-color: #7e7e7e;
 }
 
 * {

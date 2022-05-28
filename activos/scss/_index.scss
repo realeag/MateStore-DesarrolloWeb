@@ -13,6 +13,7 @@ main {
 .mainPromo {
   font-size: 32px;
   text-align: left;
+  font-weight: bolder;
 }
 .mainPagos {
   text-align: center;
@@ -49,7 +50,7 @@ carousel-item img {
 .listaProductos{
   position: relative;
   display: flex;
-  padding: 10% 10% 0 10%;
+  padding: 10px 25px 10px 140px;
 }
 .listaProductos div img{
   margin: 25px;
@@ -66,6 +67,7 @@ carousel-item img {
   border: 2px solid rgb(50,95,7);
   position: absolute;
   margin: 13em 0 1em 7em;
+  z-index: 1;
 }
 .listaProductos a:hover{
   color: white;
@@ -81,7 +83,7 @@ carousel-item img {
 .listaProductos .listaProd__Mate img:hover {
   cursor: pointer;
   transform:scale(0.98);
-  transition:all .5s ease-in-out;
+  transition:all .8s ease-in-out;
   filter: grayscale(80%);
 }
 .listaProductos .listaProd__Bombilla img {
@@ -95,7 +97,7 @@ carousel-item img {
 .listaProductos .listaProd__Bombilla img:hover {
   cursor: pointer;
   transform:scale(0.98);
-  transition:all .5s ease-in-out;
+  transition:all .8s ease-in-out;
   filter: grayscale(80%);
 }
 .listaProductos .listaProd__Termo img {
@@ -109,6 +111,6 @@ carousel-item img {
 .listaProductos .listaProd__Termo img:hover {
   cursor: pointer;
   transform:scale(0.98);
-  transition:all .5s ease-in-out;
+  transition:all .8s ease-in-out;
   filter: grayscale(80%);
 }
