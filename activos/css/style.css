@@ -507,6 +507,10 @@ th {
     margin: 0;
     padding: 0;
   }
+  .conteiner {
+    margin: 0;
+    padding: 0;
+  }
   .navbar {
     font-size: 18px;
     flex-direction: column;
@@ -612,6 +616,10 @@ th {
     width: 350px;
     height: 200px;
   }
+  .conteiner-fluid {
+    margin: 0;
+    padding: 0;
+  }
   .conteiner-fluid .login {
     margin-left: 30px;
   }
@@ -703,8 +711,13 @@ th {
     padding: 0;
     margin-left: 0px;
   }
+  .conteiner {
+    margin: 0;
+    padding: 0;
+  }
   .conteiner-fluid {
     padding: 0;
+    margin: 0;
     overflow-x: hidden;
   }
 }
@@ -842,7 +855,13 @@ th {
 
 .conteiner-fluid {
   padding: 0;
+  margin: 0;
   overflow-x: hidden;
+}
+
+.conteiner {
+  margin: 0;
+  padding: 0;
 }
 
 body {

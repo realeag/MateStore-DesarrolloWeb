@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
   }
+  .conteiner{
+    margin: 0;
+    padding: 0;
+  }
   .navbar {
     font-size: 18px;
     flex-direction: column;
@@ -113,6 +117,8 @@
     }
   }
   .conteiner-fluid {
+    margin: 0;
+    padding: 0;
     .login {
       margin-left: 30px;
     }
@@ -205,8 +211,13 @@
     padding: 0;
     margin-left: 0px;
 }
+.conteiner{
+  margin: 0;
+  padding: 0;
+}
 .conteiner-fluid {
   padding: 0;
+  margin: 0;
   overflow-x: hidden;
 }
 }
