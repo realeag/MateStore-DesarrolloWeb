@@ -146,10 +146,11 @@
     text-align: center;
   }
 }
-@media (max-width: 502px) {
+@media (min-width: 502px) {
   * {
-    margin: 0;
-    padding: 0;
+    margin: 100%;
+    padding: 100%;
+
   }
   .tarjetas {
     display: flex;
