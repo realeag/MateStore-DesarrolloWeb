@@ -234,11 +234,11 @@ footer a:hover {
 .footerMain {
   display: flex;
   width: 100%;
-  padding: 1.25rem 1.75rem;
+  padding: 1rem 1rem;
 }
 
 .footerItem {
-  padding: 1.25rem;
+  padding: 1rem;
   min-width: 200px;
   flex-direction: column;
 }
@@ -791,7 +791,7 @@ th {
     flex-direction: column;
     align-self: center;
     padding: 0;
-    margin-left: 30px;
+    margin-left: 5%;
   }
   footer {
     font-size: 10px;
@@ -799,6 +799,7 @@ th {
   }
   .footerMain {
     justify-content: space-between;
+    width: 100%;
   }
   .footerItem {
     margin: 0;
@@ -828,11 +829,10 @@ th {
   }
   .principalShip {
     margin: 0;
+    overflow-x: hidden;
   }
   .principalShip .preguntas {
     max-width: 100%;
-    margin-left: 10%;
-    margin-right: 10%;
   }
   .publicidadShip {
     margin: 0;
@@ -854,6 +854,7 @@ th {
   }
   .publicidad .curadoTres {
     width: 100%;
+    height: 100%;
   }
 }
 
