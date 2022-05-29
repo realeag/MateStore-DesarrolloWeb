@@ -758,13 +758,16 @@ th {
     justify-content: center;
   }
   .conteiner-fluid .login {
-    width: 90%;
-    margin: 40px;
+    max-width: 100%;
+    margin: 15px;
+    padding: 10px;
   }
   .conteiner-fluid .formulario {
+    max-width: 100%;
     justify-content: center;
-    width: 90%;
-    margin: 40px;
+    margin: 15px;
+    padding: 10px;
+    font-size: 18px;
   }
   .conteiner-fluid .enviosText {
     margin-left: 15px;
@@ -946,7 +949,7 @@ th {
   border-radius: 4px;
   color: white;
   font-family: "Poppins", sans-serif;
-  box-shadow: 7px 13px 37px #131111;
+  box-shadow: 3px 7px 20px #131111;
   font-size: 16px;
 }
 
@@ -988,7 +991,7 @@ th {
   padding: 40px;
   margin: 50px;
   margin-top: 100px;
-  box-shadow: 7px 13px 37px #131111;
+  box-shadow: 3px 7px 20px #131111;
   margin-bottom: 100px;
   display: flex;
   text-align: initial;

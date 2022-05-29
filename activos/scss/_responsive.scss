@@ -231,15 +231,18 @@
   }
   .conteiner-fluid {
     justify-content: center;
-
+    
     .login {
-      width: 90%;
-      margin: 40px;
+      max-width: 100%;
+      margin: 15px;
+      padding: 10px;
     }
     .formulario {
+      max-width: 100%;
       justify-content: center;
-      width: 90%;
-      margin: 40px;
+      margin: 15px;
+      padding: 10px;
+      font-size: 18px;
     }
     .enviosText {
       margin-left: 15px;
