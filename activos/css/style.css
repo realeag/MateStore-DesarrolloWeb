@@ -534,7 +534,6 @@ th {
   .conteiner {
     margin: 0;
     padding: 0;
-    width: 100%;
   }
   .navbar {
     font-size: 18px;
@@ -859,22 +858,6 @@ th {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  * {
-    margin: 100%;
-    padding: 100%;
-  }
-  .navbar {
-    font-size: 18px;
-    flex-direction: column;
-    text-align: center;
-  }
-  .navbar .nav-item {
-    margin: 0px;
-  }
-  .lateral {
-    margin-top: 20px;
-    align-self: center;
-  }
   footer {
     font-size: 10px;
     height: auto;
@@ -911,27 +894,6 @@ th {
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1300px) {
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  .navbar {
-    max-width: 100%;
-    font-size: 18px;
-    text-align: center;
-    justify-content: space-between;
-    font-size: 18px;
-  }
-  .navbar .nav-item {
-    /**no encontré forma de hacer funcionar SPACEBETWEEN en boostrap y apliqué margins**/
-    margin-right: 60px;
-    margin-left: 60px;
-    align-self: center;
-  }
-  .lateral {
-    margin-top: 20px;
-    align-self: center;
-  }
   footer {
     font-size: 10px;
     height: auto;
@@ -1070,6 +1032,7 @@ th {
   justify-content: center;
   height: 48px;
   box-sizing: border-box;
+  align-items: center;
 }
 
 .botonMiCuenta {
@@ -1090,9 +1053,9 @@ th {
 .btn {
   color: black;
   height: auto;
-  font-size: 24px;
+  font-size: 22px;
   background: none;
-  background-color: #7e7e7e;
+  background-color: #ffffff;
 }
 
 * {
@@ -1110,12 +1073,10 @@ th {
 .conteiner {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 body {
   background: white;
   position: relative;
-  overflow-y: hidden;
 }
 /*# sourceMappingURL=style.css.map */

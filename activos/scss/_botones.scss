@@ -10,6 +10,7 @@
     justify-content: center;
     height: 48px;
     box-sizing: border-box;
+    align-items: center
 }
 .botonMiCuenta{
     @extend .botonProd;
@@ -30,7 +31,7 @@
     @extend .botonProd;
     color: black;
     height: auto;
-    font-size: 24px;
+    font-size: 22px;
     background: none;
-    background-color: #7e7e7e;
+    background-color: #ffffff;
   }
