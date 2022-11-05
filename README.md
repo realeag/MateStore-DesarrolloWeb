@@ -19,4 +19,4 @@ Sitio e-commerce de productos (mate)
 
 ## Ejecución
 
-[Netlify](https://collectibles-alan-reale.netlify.app/)
+[Netlify](https://matestore-alan-reale.netlify.app/)
